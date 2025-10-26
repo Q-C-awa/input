@@ -20,13 +20,12 @@ init python:
                 
                 # 请求码
                 self.REQUEST_IMAGE_CAPTURE = 1
-                self.REQUEST_IMAGE_PICK = 2
+                self.REQUEST_IMAGE_PICK = 2 
                 
                 # 临时文件路径
                 self.temp_photo_path = None
             
             def take_photo(self):
-                """调用相机拍照"""
                 try:
                     # 创建临时文件
                     storage_dir = self.Environment.getExternalStoragePublicDirectory(self.Environment.DIRECTORY_PICTURES)
