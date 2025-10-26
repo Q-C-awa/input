@@ -47,7 +47,7 @@ init python:
                     self.mActivity.startActivityForResult(intent, self.REQUEST_IMAGE_CAPTURE)
                     return True
                 except Exception as e:
-                    print(f"拍照失败: {e}")
+                    print(f"拍照未成功: {e}")
                     return False
             
             def pick_photo(self):
