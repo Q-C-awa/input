@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label permission_test is defined twice, at File "game/pess.rpy", line 334:
-label permission_test:
-and File "game/script.rpy", line 134:
-label permission_test:
-
+File "game/script.rpy", line 32: add statement expects 1 positional arguments, got 0.
+    add 
+        ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sat Oct 25 20:48:20 2025
+Sun Oct 26 13:36:33 2025

@@ -1,28 +1,74 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 44, in script
-    if request_code is not None:
-  File "game/script.rpy", line 44, in <module>
-    if request_code is not None:
-NameError: name 'request_code' is not defined
+  File "renpy/common/00start.rpy", line 244, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/script.rpy", line 94, in script
+    call screen ad_screen
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 23, in execute
+    screen ad_screen():
+  File "game/script.rpy", line 23, in execute
+    screen ad_screen():
+  File "game/script.rpy", line 31, in execute
+    button:
+  File "game/script.rpy", line 31, in keywords
+    button:
+  File "game/script.rpy", line 33, in <module>
+    OpenURL(current_ad.url),
+AttributeError: 'Adlist' object has no attribute 'url'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 44, in script
-    if request_code is not None:
-  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 1856, in execute
-    if renpy.python.py_eval(condition):
-  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1218, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 44, in <module>
-    if request_code is not None:
-NameError: name 'request_code' is not defined
+  File "renpy/common/00start.rpy", line 244, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/script.rpy", line 94, in script
+    call screen ad_screen
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\ast.py", line 1987, in execute
+    self.call("execute")
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\ast.py", line 1966, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 345, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\display\core.py", line 2218, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\display\core.py", line 2748, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\display\core.py", line 2748, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\display\screen.py", line 700, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 23, in execute
+    screen ad_screen():
+  File "game/script.rpy", line 23, in execute
+    screen ad_screen():
+  File "game/script.rpy", line 31, in execute
+    button:
+  File "game/script.rpy", line 31, in keywords
+    button:
+  File "game/script.rpy", line 33, in <module>
+    OpenURL(current_ad.url),
+AttributeError: 'Adlist' object has no attribute 'url'
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.3.7.25031702
 input 1.1
-Sat Oct 25 19:00:42 2025
+Sun Oct 26 13:39:49 2025

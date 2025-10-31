@@ -86,10 +86,7 @@ screen main_menu():
     ## 此语句可确保替换掉任何其他菜单屏幕。
     tag menu
 
-    add "csauchas":
-        
-        at random_motion
-
+    use ad_screen
     ## 此空框可使标题菜单变暗。
     frame:
         style "main_menu_frame"
