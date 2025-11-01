@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 32: add statement expects 1 positional arguments, got 0.
-    add 
-        ^
+File "game/pess.rpy", line 189: 'padding' is not a keyword argument or valid child of the vbox statement.
+    padding (20, 20, 20, 20)
+           ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sun Oct 26 13:36:33 2025
+Sat Nov  1 16:09:27 2025
