@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/pess.rpy", line 189: 'padding' is not a keyword argument or valid child of the vbox statement.
-    padding (20, 20, 20, 20)
-           ^
+File "game/script.rpy", line 26: timer statement expects 1 positional arguments, got 0.
+    timer
+              ^
 
-Ren'Py Version: Ren'Py 8.3.7.25031702
-Sat Nov  1 16:09:27 2025
+Ren'Py Version: Ren'Py 8.4.1.25072401
+Sat Nov  1 19:40:28 2025

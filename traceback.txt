@@ -1,36 +1,44 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/pess.rpy", line 1, in script
-    init python:
-  File "game/pess.rpy", line 1, in script
-    init python:
-  File "game/pess.rpy", line 2, in <module>
-    import jnius
-ModuleNotFoundError: No module named 'jnius.jnius'
+After initialization, but before game start.
+  File "game/script.rpy", line 23, in prepare_screen
+    screen ad_screen():
+  File "game/script.rpy", line 23, in prepare
+    screen ad_screen():
+  File "game/script.rpy", line 27, in prepare
+    timer 10.0 action [ShowMenu("main_menu"),SetVariable()]
+  File "game/script.rpy", line 27, in prepare
+    timer 10.0 action [ShowMenu("main_menu"),SetVariable()]
+  File "game/script.rpy", line 27, in <module>
+    timer 10.0 action [ShowMenu("main_menu"),SetVariable()]
+TypeError: __init__() missing 1 required positional argument: 'name'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\bootstrap.py", line 359, in bootstrap
     renpy.main.main()
-  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\main.py", line 541, in main
-    renpy.game.context().run(node)
-  File "game/pess.rpy", line 1, in script
-    init python:
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "game/pess.rpy", line 1, in script
-    init python:
-  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/pess.rpy", line 2, in <module>
-    import jnius
-  File "lib/python3.9/jnius/__init__.py", line 41, in <module>
-ModuleNotFoundError: No module named 'jnius.jnius'
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\main.py", line 652, in main
+    run(restart)
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\main.py", line 94, in run
+    renpy.display.screen.prepare_screens()
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\display\screen.py", line 1027, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/script.rpy", line 23, in prepare_screen
+    screen ad_screen():
+  File "game/script.rpy", line 23, in prepare
+    screen ad_screen():
+  File "game/script.rpy", line 27, in prepare
+    timer 10.0 action [ShowMenu("main_menu"),SetVariable()]
+  File "game/script.rpy", line 27, in prepare
+    timer 10.0 action [ShowMenu("main_menu"),SetVariable()]
+  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 27, in <module>
+    timer 10.0 action [ShowMenu("main_menu"),SetVariable()]
+TypeError: __init__() missing 1 required positional argument: 'name'
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.3.7.25031702
-input 1.1
-Sat Nov  1 15:55:03 2025
+input 1145.1
+Sat Nov  1 19:43:44 2025
