@@ -6,7 +6,7 @@ image ad_2 = "ad_2.png"
 image ad_3 = "ad_3.png"
 image ad_4 = "ad_4.png"
 image ad_5 = "ad_5.png"
-define request_all = True
+define request_all = False
 init -99 python:
     class Adlist:
         def __init__(self, image_name, url):

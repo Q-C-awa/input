@@ -1,30 +1,40 @@
-renpy.solid
-renpy.geometry renpy.texture shadertoy.miraclesnowflakes
-Raindrop_Custom renpy.geometry
+Raindrop_Downward Raindrop_Downward
 renpy.geometry renpy.solid
 renpy.alpha Rain renpy.texture
-Rain renpy.geometry renpy.texture
-renpy.alpha renpy.texture renpy.texture
-renpy.alpha renpy.geometry renpy.texture
-renpy.dissolve renpy.dissolve
-shadertoy.miraclesnowflakes renpy.texture
-Raindrop_Downward Raindrop_Downward
-Raindrop_Heart renpy.geometry
 renpy.alpha renpy.texture
-Fractal_Boxes renpy.geometry
-Raindrop_Custom Raindrop_Custom
-The_Universe_Within renpy.geometry
-Fractal_Boxes Fractal_Boxes
-Raindrop_Simple renpy.geometry
-Rain Rain
-Rain renpy.alpha renpy.geometry renpy.texture
-renpy.texture
+color_solid renpy.geometry renpy.solid
 Raindrop_Downward renpy.geometry
+shadertoy.miraclesnowflakes renpy.texture
+Fractal_Boxes renpy.geometry
+color_solid renpy.solid
+color_round renpy.geometry renpy.texture
+Fractal_Boxes Fractal_Boxes
+renpy.geometry renpy.texture
+renpy.dissolve renpy.dissolve
+Raindrop_Heart renpy.geometry
+Rain renpy.alpha renpy.geometry renpy.texture
+color_solid renpy.geometry renpy.texture
+Raindrop_Simple renpy.geometry
+color_solid renpy.texture
+color_solid_3 renpy.geometry renpy.texture
+renpy.geometry renpy.texture shadertoy.miraclesnowflakes
+The_Universe_Within The_Universe_Within
+color_solid_2 renpy.texture
+Raindrop_Custom renpy.geometry
+renpy.alpha renpy.geometry renpy.texture
+color_solid_2 renpy.geometry renpy.texture
+renpy.solid
+Rain renpy.geometry renpy.texture
+The_Universe_Within renpy.geometry
+renpy.alpha renpy.texture renpy.texture
+renpy.texture
+color_solid_3 renpy.texture
+Raindrop_Custom Raindrop_Custom
+Rain renpy.texture
+Rain renpy.geometry
+Rain Rain
+renpy.dissolve renpy.geometry
 Raindrop_Heart Raindrop_Heart
 Raindrop_Simple Raindrop_Simple
-renpy.geometry renpy.texture
-Rain renpy.texture
-The_Universe_Within The_Universe_Within
-Rain renpy.geometry
-renpy.dissolve renpy.geometry
 renpy.ftl
+color_round renpy.texture

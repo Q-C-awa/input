@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 26: timer statement expects 1 positional arguments, got 0.
-    timer
-              ^
+File "game/sehuan.rpy", line 13: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    uniform "u_base_color" 
+                           ^
 
-Ren'Py Version: Ren'Py 8.4.1.25072401
-Sat Nov  1 19:40:28 2025
+Ren'Py Version: Ren'Py 8.3.7.25031702
+Sun Nov  2 14:21:24 2025

@@ -1,44 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "game/script.rpy", line 23, in prepare_screen
-    screen ad_screen():
-  File "game/script.rpy", line 23, in prepare
-    screen ad_screen():
-  File "game/script.rpy", line 27, in prepare
-    timer 10.0 action [ShowMenu("main_menu"),SetVariable()]
-  File "game/script.rpy", line 27, in prepare
-    timer 10.0 action [ShowMenu("main_menu"),SetVariable()]
-  File "game/script.rpy", line 27, in <module>
-    timer 10.0 action [ShowMenu("main_menu"),SetVariable()]
-TypeError: __init__() missing 1 required positional argument: 'name'
+While running game code:
+  File "game/pess.rpy", line 286, in script
+    jump sehuan
+ScriptError: could not find label 'sehuan'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\main.py", line 652, in main
-    run(restart)
-  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\main.py", line 94, in run
-    renpy.display.screen.prepare_screens()
-  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\display\screen.py", line 1027, in prepare_screens
-    s.ast.prepare_screen()
-  File "game/script.rpy", line 23, in prepare_screen
-    screen ad_screen():
-  File "game/script.rpy", line 23, in prepare
-    screen ad_screen():
-  File "game/script.rpy", line 27, in prepare
-    timer 10.0 action [ShowMenu("main_menu"),SetVariable()]
-  File "game/script.rpy", line 27, in prepare
-    timer 10.0 action [ShowMenu("main_menu"),SetVariable()]
-  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 27, in <module>
-    timer 10.0 action [ShowMenu("main_menu"),SetVariable()]
-TypeError: __init__() missing 1 required positional argument: 'name'
+  File "game/pess.rpy", line 286, in script
+    jump sehuan
+  File "d:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 1712, in execute
+    rv = renpy.game.script.lookup(target)
+  File "d:\Ren'py\renpy-8.3.7-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'sehuan'.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.3.7.25031702
 input 1145.1
-Sat Nov  1 19:43:44 2025
+Sun Nov  2 14:20:10 2025

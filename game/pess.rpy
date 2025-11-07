@@ -282,3 +282,5 @@ label start:
             jump permission_test
         "退出":
             return
+        "sejai":
+            jump sehuan
