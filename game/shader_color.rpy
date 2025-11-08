@@ -20,7 +20,7 @@ init python:
             vec3 finalColor = mixedColor * brightness;
             gl_FragColor = vec4(finalColor, 1.0);
         """)
-    renpy.register_shader("color_round", 
+    renpy.register_shader("color_round",  
         variables="""
             uniform vec2 u_model_size;
             attribute vec2 a_tex_coord;

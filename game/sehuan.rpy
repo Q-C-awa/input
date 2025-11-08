@@ -1,75 +1,159 @@
-# transform shader_tran_2:
-#     shader "color_solid_2"
-# transform shader_tran_3:
-#     shader "color_solid_3"
-
-default selected_color = (1.0, 0.0, 0.0)
-default current_color_code = "#ff0000"
-
-image white_bg = "white.jpg"
-
-transform shader_tran_soild:
-    shader "color_solid"
-    # uniform "u_base_color" 
-
-transform shader_tran_round:
-    shader "color_round"
-
-screen color_choice:
-    tag menu 
-    zorder 100
-    
-    add "white_bg" at shader_tran_soild:
-        size (400,400)
-        align(0.5,0.5)
-    
-    add "white_bg" at shader_tran_round:
-        size (750,750)
-        align(0.5,0.5)
-    
-    text current_color_code:
-        align(0.5, 0.9)
-        size 40
-        color "#000000"
-    
-    mousearea:
-        area (0, 0, 750, 750)
-        hovered GetRingColor()
-        unhovered None
-
 init python:
-    def GetRingColor():
-        mouse_pos = renpy.get_mouse_pos()
-        center_x = 1280 / 2
-        center_y = 720 / 2
-        mouse_x = mouse_pos[0] - center_x
-        mouse_y = mouse_pos[1] - center_y
-        
-        dist = (mouse_x**2 + mouse_y**2)**0.5
-        if 270 <= dist <= 337.5:
-            angle = math.atan2(mouse_y, mouse_x)
-            hue = (angle + math.pi) / (2 * math.pi)
-            
-            if hue < 1/6:
-                r, g, b = 1.0, hue * 6, 0.0
-            elif hue < 2/6:
-                r, g, b = 1.0 - (hue - 1/6) * 6, 1.0, 0.0
-            elif hue < 3/6:
-                r, g, b = 0.0, 1.0, (hue - 2/6) * 6
-            elif hue < 4/6:
-                r, g, b = 0.0, 1.0 - (hue - 3/6) * 6, 1.0
-            elif hue < 5/6:
-                r, g, b = (hue - 4/6) * 6, 0.0, 1.0
-            else:
-                r, g, b = 1.0, 0.0, 1.0 - (hue - 5/6) * 6
-            
-            store.selected_color = (r, g, b)
-            
-            r_int = int(r * 255)
-            g_int = int(g * 255)
-            b_int = int(b * 255)
-            store.current_color_code = "#{:02x}{:02x}{:02x}".format(r_int, g_int, b_int)
+    import pygame
+    
+    class ColorSolidDisplayable(renpy.Displayable):
+        def __init__(self, width, height, step=4, **kwargs):
+            super(ColorSolidDisplayable, self).__init__(**kwargs)
+            self.width = width
+            self.height = height
+            self.step = step
+            self.colors = self.precompute_colors()
+        def precompute_colors(self):
+            colors = {}
+            step = self.step
+            for x in range(0, self.width, step):
+                for y in range(0, self.height, step):
+                    u = x / float(self.width - 1) if self.width > 1 else 0
+                    v = y / float(self.height - 1) if self.height > 1 else 0
+                    saturation = u
+                    brightness = 1.05 - v
+                    r = ((1 - saturation) * brightness + saturation) * brightness
+                    g = (1 - saturation) * brightness * brightness
+                    b = (1 - saturation) * brightness * brightness
+                    r = max(0.0, min(1.0, r))
+                    g = max(0.0, min(1.0, g))
+                    b = max(0.0, min(1.0, b))
+                    colors[(x, y)] = (r, g, b)
+            return colors   
+        def render(self, width, height, st, at):
+            render = renpy.Render(self.width, self.height)
+            step = self.step
+            for (x, y), color in self.colors.items():
+                rect_width = min(step, self.width - x)
+                rect_height = min(step, self.height - y)
+                color_rect = Solid(
+                    Color(rgb=color), 
+                    xsize=rect_width, 
+                    ysize=rect_height
+                )
+                render.place(color_rect, x=x, y=y)
+            return render
+        def event(self, ev, x, y, st):
+            return None
+        def visit(self):
+            return [] 
+        def get_color_at_position(self, x, y):
+            u = x / float(self.width - 1) if self.width > 1 else 0
+            v = y / float(self.height - 1) if self.height > 1 else 0
+            u = max(0.0, min(1.0, u))
+            v = max(0.0, min(1.0, v))
+            saturation = u
+            brightness = 1.05 - v
+            r = ((1 - saturation) * brightness + saturation) * brightness
+            g = (1 - saturation) * brightness * brightness
+            b = (1 - saturation) * brightness * brightness
+            r = max(0.0, min(1.0, r))
+            g = max(0.0, min(1.0, g))
+            b = max(0.0, min(1.0, b))
+            return (r, g, b)
+    class MousePositionDisplay(renpy.Displayable):
+        def __init__(self, target_rect=None, color_displayable=None, **kwargs):
+            super(MousePositionDisplay, self).__init__(**kwargs)
+            self.mouse_x = 0
+            self.mouse_y = 0
+            self.target_rect = target_rect 
+            self.color_displayable = color_displayable
+            self.is_in_target_area = False
+            self.current_color = "#000000"
+            # 添加颜色代码字符串存储
+            self.color_code_string = "#000000"
+        def render(self, width, height, st, at):
+            render = renpy.Render(width, height)
+            try:
+                mouse_pos = pygame.mouse.get_pos()
+                self.mouse_x, self.mouse_y = mouse_pos
+                self.is_in_target_area = False
+                if self.target_rect:
+                    x, y, w, h = self.target_rect
+                    self.is_in_target_area = (x <= self.mouse_x <= x + w and 
+                                            y <= self.mouse_y <= y + h)
+                if self.is_in_target_area and self.color_displayable:
+                    local_x = (self.mouse_x - x) / 0.4
+                    local_y = (self.mouse_y - y) / 0.4
+                    local_x = max(0, min(self.color_displayable.width - 1, local_x))
+                    local_y = max(0, min(self.color_displayable.height - 1, local_y))
+                    color = self.color_displayable.get_color_at_position(local_x, local_y)
+                    r_hex = int(color[0] * 255)
+                    g_hex = int(color[1] * 255)
+                    b_hex = int(color[2] * 255)
+                    self.current_color = "#{:02x}{:02x}{:02x}".format(r_hex, g_hex, b_hex)
+                    # 更新颜色代码字符串
+                    self.color_code_string = self.current_color
+                    position_text = "鼠标位置: ({}, {})(调试用)".format(self.mouse_x, self.mouse_y)
+                    color_text = "颜色: {}".format(self.current_color)
+                    position_display = Text(position_text, 
+                                        size=24, 
+                                        color="#FFFFFF",
+                                        outlines=[(2, "#000000", 0, 0)])
+                    position_render = renpy.render(position_display, width, height, st, at)
+                    render.blit(position_render, (20, 20))
+                    color_display = Text(color_text, 
+                                    size=24, 
+                                    color="#FFFFFF",
+                                    outlines=[(2, "#000000", 0, 0)])
+                    color_render = renpy.render(color_display, width, height, st, at)
+                    render.blit(color_render, (20, 50))
+                    border = Frame("gui/button/choice_idle_background.png", 5, 5)
+                    border_render = renpy.render(border, w, h, st, at)
+                    render.blit(border_render, (x, y))
+                    print(position_text + " - 颜色: " + self.current_color + " - 在目标区内")
+                else:
+                    # 不在目标区域时重置颜色代码
+                    self.color_code_string = "#000000"
+                    text_display = Text("鼠标不在图像区域内", 
+                                    size=24, 
+                                    color="#888888",
+                                    outlines=[(2, "#000000", 0, 0)])
+                    text_render = renpy.render(text_display, width, height, st, at)
+                    render.blit(text_render, (20, 20))
+            except Exception as e:
+                error_text = Text("错误: " + str(e), size=18, color="#FF0000")
+                error_render = renpy.render(error_text, width, height, st, at)
+                render.blit(error_render, (20, 20))
+            renpy.redraw(self, 0.001)
+            return render   
+        def event(self, ev, x, y, st):
+            if ev.type == pygame.MOUSEMOTION:
+                self.mouse_x, self.mouse_y = ev.pos
+            return None
+        # 添加获取颜色代码字符串的方法
+        def get_color_code_string(self):
+            return self.color_code_string
+
+default image_x = (config.screen_width - 400) / 2
+default image_y = (config.screen_height - 400) / 2
+default image_width = 400
+default image_height = 400
+default color_displayable_instance = ColorSolidDisplayable(1000, 1000, step=6)
+default mouse_display = MousePositionDisplay(
+        target_rect=(image_x, image_y, image_width, image_height),
+        color_displayable=color_displayable_instance
+    )
+default current_color_code = mouse_display.get_color_code_string()
+image color_solid_displayable_medium_image:
+    zoom 0.4
+    color_displayable_instance
+
+screen sehuan_screen:
+    tag menu
+    modal True
+    add mouse_display
+    add "color_solid_displayable_medium_image" at truecenter
+    textbutton "返回" xalign 1.0 yalign 1.0 action Return()
+    timer 0.001 repeat True action SetScreenVariable("current_color_code", mouse_display.get_color_code_string())
+    add Solid(current_color_code):
+        align(0.5,0.8)
+        size(50,50)
 
 label sehuan:
-    call screen color_choice
-    return
+    call screen sehuan_screen

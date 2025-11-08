@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/sehuan.rpy", line 13: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
-    uniform "u_base_color" 
-                           ^
+File "game/sehuan.rpy", line 141: invalid syntax
+        )default current_color_code = mouse_display.get_color_code_string()
+          ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sun Nov  2 14:21:24 2025
+Sat Nov  8 19:52:25 2025

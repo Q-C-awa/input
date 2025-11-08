@@ -1,22 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/pess.rpy", line 286, in script
-    jump sehuan
-ScriptError: could not find label 'sehuan'.
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/pess.rpy", line 286, in script
-    jump sehuan
-  File "d:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 1712, in execute
-    rv = renpy.game.script.lookup(target)
-  File "d:\Ren'py\renpy-8.3.7-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'sehuan'.
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.3.7.25031702
 input 1145.1
-Sun Nov  2 14:20:10 2025
+Sat Nov  8 19:52:10 2025
