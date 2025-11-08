@@ -44,3 +44,1993 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+鼠标位置: (779, 437)(调试用) - 颜色: #a89e9e - 在目标区内
+鼠标位置: (854, 417)(调试用) - 颜色: #c28f8f - 在目标区内
+鼠标位置: (871, 411)(调试用) - 颜色: #c98c8c - 在目标区内
+鼠标位置: (883, 410)(调试用) - 颜色: #cb8787 - 在目标区内
+鼠标位置: (911, 410)(调试用) - 颜色: #cd7979 - 在目标区内
+鼠标位置: (923, 414)(调试用) - 颜色: #ca7070 - 在目标区内
+鼠标位置: (935, 420)(调试用) - 颜色: #c66767 - 在目标区内
+鼠标位置: (938, 425)(调试用) - 颜色: #c26363 - 在目标区内
+鼠标位置: (938, 430)(调试用) - 颜色: #bd6060 - 在目标区内
+鼠标位置: (933, 431)(调试用) - 颜色: #bc6161 - 在目标区内
+鼠标位置: (928, 432)(调试用) - 颜色: #bb6363 - 在目标区内
+鼠标位置: (920, 432)(调试用) - 颜色: #ba6666 - 在目标区内
+鼠标位置: (907, 432)(调试用) - 颜色: #b96c6c - 在目标区内
+鼠标位置: (877, 439)(调试用) - 颜色: #af7474 - 在目标区内
+鼠标位置: (872, 465)(调试用) - 颜色: #986363 - 在目标区内
+鼠标位置: (885, 518)(调试用) - 颜色: #704040 - 在目标区内
+鼠标位置: (900, 569)(调试用) - 颜色: #502525 - 在目标区内
+鼠标位置: (907, 579)(调试用) - 颜色: #4b2020 - 在目标区内
+鼠标位置: (910, 579)(调试用) - 颜色: #4b2020 - 在目标区内
+鼠标位置: (921, 577)(调试用) - 颜色: #4e1f1f - 在目标区内
+鼠标位置: (925, 572)(调试用) - 颜色: #522020 - 在目标区内
+鼠标位置: (952, 488)(调试用) - 颜色: #903d3d - 在目标区内
+鼠标位置: (954, 381)(调试用) - 颜色: #eb7575 - 在目标区内
+鼠标位置: (987, 361)(调试用) - 颜色: #fe6d6d - 在目标区内
+鼠标位置: (987, 380)(调试用) - 颜色: #ec6363 - 在目标区内
+鼠标位置: (979, 401)(调试用) - 颜色: #da5c5c - 在目标区内
+鼠标位置: (973, 424)(调试用) - 颜色: #c65353 - 在目标区内
+鼠标位置: (970, 445)(调试用) - 颜色: #b44a4a - 在目标区内
+鼠标位置: (962, 460)(调试用) - 颜色: #a74646 - 在目标区内
+鼠标位置: (951, 474)(调试用) - 颜色: #9b4343 - 在目标区内
+鼠标位置: (942, 491)(调试用) - 颜色: #8c3e3e - 在目标区内
+鼠标位置: (935, 501)(调试用) - 颜色: #843c3c - 在目标区内
+鼠标位置: (928, 508)(调试用) - 颜色: #7e3a3a - 在目标区内
+鼠标位置: (926, 511)(调试用) - 颜色: #7b3939 - 在目标区内
+鼠标位置: (926, 512)(调试用) - 颜色: #7a3939 - 在目标区内
+鼠标位置: (926, 512)(调试用) - 颜色: #7a3939 - 在目标区内
+鼠标位置: (924, 504)(调试用) - 颜色: #803d3d - 在目标区内
+鼠标位置: (924, 451)(调试用) - 颜色: #aa5959 - 在目标区内
+鼠标位置: (927, 426)(调试用) - 颜色: #c06767 - 在目标区内
+鼠标位置: (940, 479)(调试用) - 颜色: #954545 - 在目标区内
+鼠标位置: (943, 517)(调试用) - 颜色: #793232 - 在目标区内
+鼠标位置: (943, 562)(调试用) - 颜色: #5b2121 - 在目标区内
+鼠标位置: (948, 580)(调试用) - 颜色: #511b1b - 在目标区内
+鼠标位置: (949, 598)(调试用) - 颜色: #461515 - 在目标区内
+鼠标位置: (951, 610)(调试用) - 颜色: #401212 - 在目标区内
+鼠标位置: (951, 621)(调试用) - 颜色: #3a1010 - 在目标区内
+鼠标位置: (951, 624)(调试用) - 颜色: #380f0f - 在目标区内
+鼠标位置: (950, 626)(调试用) - 颜色: #370e0e - 在目标区内
+鼠标位置: (965, 634)(调试用) - 颜色: #350c0c - 在目标区内
+鼠标位置: (994, 629)(调试用) - 颜色: #3c0b0b - 在目标区内
+鼠标位置: (1028, 600)(调试用) - 颜色: #510d0d - 在目标区内
+鼠标位置: (1044, 542)(调试用) - 颜色: #781515 - 在目标区内
+鼠标位置: (1028, 475)(调试用) - 颜色: #a42a2a - 在目标区内
+鼠标位置: (1001, 469)(调试用) - 颜色: #a53535 - 在目标区内
+鼠标位置: (966, 469)(调试用) - 颜色: #a04141 - 在目标区内
+鼠标位置: (950, 474)(调试用) - 颜色: #9a4444 - 在目标区内
+鼠标位置: (930, 482)(调试用) - 颜色: #924646 - 在目标区内
+鼠标位置: (921, 490)(调试用) - 颜色: #8a4545 - 在目标区内
+鼠标位置: (915, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (915, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (915, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (915, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (915, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (915, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (915, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (915, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (915, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (915, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (915, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (915, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (915, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (918, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (918, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (918, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (918, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (918, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (918, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (918, 496)(调试用) - 颜色: #854343 - 在目标区内
+鼠标位置: (933, 493)(调试用) - 颜色: #8a4040 - 在目标区内
+鼠标位置: (989, 490)(调试用) - 颜色: #943131 - 在目标区内
+鼠标位置: (993, 490)(调试用) - 颜色: #943030 - 在目标区内
+鼠标位置: (1008, 497)(调试用) - 颜色: #912929 - 在目标区内
+鼠标位置: (1030, 510)(调试用) - 颜色: #8b2020 - 在目标区内
+鼠标位置: (1027, 542)(调试用) - 颜色: #751919 - 在目标区内
+鼠标位置: (1018, 555)(调试用) - 颜色: #6b1717 - 在目标区内
+鼠标位置: (991, 574)(调试用) - 颜色: #5b1717 - 在目标区内
+鼠标位置: (952, 581)(调试用) - 颜色: #511a1a - 在目标区内
+鼠标位置: (917, 577)(调试用) - 颜色: #4e2020 - 在目标区内
+鼠标位置: (895, 534)(调试用) - 颜色: #663535 - 在目标区内
+鼠标位置: (894, 504)(调试用) - 颜色: #7c4545 - 在目标区内
+鼠标位置: (907, 477)(调试用) - 颜色: #925050 - 在目标区内
+鼠标位置: (926, 463)(调试用) - 颜色: #a05252 - 在目标区内
+鼠标位置: (966, 460)(调试用) - 颜色: #a74545 - 在目标区内
+鼠标位置: (990, 478)(调试用) - 颜色: #9d3535 - 在目标区内
+鼠标位置: (1002, 502)(调试用) - 颜色: #8d2929 - 在目标区内
+鼠标位置: (1002, 527)(调试用) - 颜色: #7b2222 - 在目标区内
+鼠标位置: (992, 553)(调试用) - 颜色: #691c1c - 在目标区内
+鼠标位置: (977, 567)(调试用) - 颜色: #5d1b1b - 在目标区内
+鼠标位置: (943, 582)(调试用) - 颜色: #4f1b1b - 在目标区内
+鼠标位置: (921, 586)(调试用) - 颜色: #491c1c - 在目标区内
+鼠标位置: (910, 583)(调试用) - 颜色: #491f1f - 在目标区内
+鼠标位置: (903, 571)(调试用) - 颜色: #4f2424 - 在目标区内
+鼠标位置: (900, 567)(调试用) - 颜色: #512626 - 在目标区内
+鼠标位置: (900, 563)(调试用) - 颜色: #542828 - 在目标区内
+鼠标位置: (900, 563)(调试用) - 颜色: #542828 - 在目标区内
+鼠标位置: (901, 565)(调试用) - 颜色: #522727 - 在目标区内
+鼠标位置: (906, 574)(调试用) - 颜色: #4e2222 - 在目标区内
+鼠标位置: (908, 585)(调试用) - 颜色: #471e1e - 在目标区内
+鼠标位置: (912, 591)(调试用) - 颜色: #451c1c - 在目标区内
+鼠标位置: (914, 595)(调试用) - 颜色: #431a1a - 在目标区内
+鼠标位置: (914, 595)(调试用) - 颜色: #431a1a - 在目标区内
+鼠标位置: (914, 595)(调试用) - 颜色: #431a1a - 在目标区内
+鼠标位置: (914, 595)(调试用) - 颜色: #431a1a - 在目标区内
+鼠标位置: (914, 597)(调试用) - 颜色: #411919 - 在目标区内
+Resetting cache.
+Early init took 51.03s
+Loading error handling took 0.02s
+Loading script took 0.09s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.06s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.23s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+鼠标位置: (791, 641)(调试用) - 颜色: #1a1414 - 在目标区内
+鼠标位置: (843, 561)(调试用) - 颜色: #4c3131 - 在目标区内
+鼠标位置: (853, 547)(调试用) - 颜色: #563737 - 在目标区内
+鼠标位置: (871, 527)(调试用) - 颜色: #673e3e - 在目标区内
+鼠标位置: (897, 495)(调试用) - 颜色: #834949 - 在目标区内
+鼠标位置: (906, 471)(调试用) - 颜色: #975454 - 在目标区内
+鼠标位置: (912, 468)(调试用) - 颜色: #9a5454 - 在目标区内
+鼠标位置: (1035, 479)(调试用) - 颜色: #a22727 - 在目标区内
+鼠标位置: (1011, 506)(调试用) - 颜色: #8b2626 - 在目标区内
+Resetting cache.
+Early init took 57.81s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.09s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.26s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 62.29s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.06s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.14s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.24s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 73.56s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.09s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.19s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.26s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 76.00s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.06s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.26s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 91.47s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.09s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 97.63s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.06s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 100.77s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/sehuan.rpy", line 161: add statement expects 1 positional arguments, got 0.
+    add 
+        ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 103.89s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.10s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 105.52s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.06s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 107.17s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.06s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 110.30s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.09s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 111.99s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/sehuan.rpy", line 161: add expects a non-empty block.
+    add Solid(current_color_code):
+                                  ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.23s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 115.13s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.11s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 119.77s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.09s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 122.93s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.11s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 124.58s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.06s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 126.18s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.06s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 144.37s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+
+File "game/sehuan.rpy", line 138: invalid syntax
+    mouse_display.get_color_code_string()default mouse_display = MousePositionDisplay(\
+                                          ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.27s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 145.97s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.08s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.19s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 150.60s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.11s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 153.76s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.06s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 156.21s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.08s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 157.35s
+Loading error handling took 0.01s
+Loading script took 0.06s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.06s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+
+While running game code:
+  File "renpy/common/00start.rpy", line 195, in script
+    python:
+  File "renpy/common/00start.rpy", line 196, in <module>
+    renpy.execute_default_statement(True)
+  File "game/sehuan.rpy", line 138, in execute_default
+    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 138, in <module>
+    default current_color_code = mouse_display.get_color_code_string()
+NameError: name 'mouse_display' is not defined
+Interface start took 0.12s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 172.50s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/sehuan.rpy", line 141: invalid syntax
+        )default current_color_code = mouse_display.get_color_code_string()
+          ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 175.67s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.07s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.26s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+Resetting cache.
+Early init took 178.22s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.06s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.27s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+鼠标位置: (877, 730)(调试用) - 颜色: #060000 - 在目标区内
+鼠标位置: (810, 685)(调试用) - 颜色: #0d0707 - 在目标区内
+鼠标位置: (804, 655)(调试用) - 颜色: #160f0f - 在目标区内
+鼠标位置: (835, 588)(调试用) - 颜色: #3a2626 - 在目标区内
+鼠标位置: (848, 574)(调试用) - 颜色: #442a2a - 在目标区内
+鼠标位置: (890, 544)(调试用) - 颜色: #5e3232 - 在目标区内
+鼠标位置: (916, 532)(调试用) - 颜色: #6b3232 - 在目标区内
+鼠标位置: (919, 533)(调试用) - 颜色: #6a3131 - 在目标区内
+鼠标位置: (919, 546)(调试用) - 颜色: #622b2b - 在目标区内
+鼠标位置: (919, 546)(调试用) - 颜色: #622b2b - 在目标区内
+鼠标位置: (919, 546)(调试用) - 颜色: #622b2b - 在目标区内
+鼠标位置: (919, 546)(调试用) - 颜色: #622b2b - 在目标区内
+鼠标位置: (914, 542)(调试用) - 颜色: #632e2e - 在目标区内
+鼠标位置: (912, 541)(调试用) - 颜色: #642f2f - 在目标区内
+鼠标位置: (907, 540)(调试用) - 颜色: #643030 - 在目标区内
+鼠标位置: (882, 524)(调试用) - 颜色: #6b3d3d - 在目标区内
+鼠标位置: (863, 495)(调试用) - 颜色: #7e5252 - 在目标区内
+鼠标位置: (863, 495)(调试用) - 颜色: #7e5252 - 在目标区内
+鼠标位置: (863, 495)(调试用) - 颜色: #7e5252 - 在目标区内
+鼠标位置: (863, 495)(调试用) - 颜色: #7e5252 - 在目标区内
+鼠标位置: (862, 495)(调试用) - 颜色: #7e5353 - 在目标区内
+鼠标位置: (862, 495)(调试用) - 颜色: #7e5353 - 在目标区内
+鼠标位置: (861, 496)(调试用) - 颜色: #7d5252 - 在目标区内
+鼠标位置: (861, 496)(调试用) - 颜色: #7d5252 - 在目标区内
+鼠标位置: (861, 496)(调试用) - 颜色: #7d5252 - 在目标区内
+鼠标位置: (861, 496)(调试用) - 颜色: #7d5252 - 在目标区内
+鼠标位置: (861, 496)(调试用) - 颜色: #7d5252 - 在目标区内
+鼠标位置: (861, 496)(调试用) - 颜色: #7d5252 - 在目标区内
+鼠标位置: (872, 512)(调试用) - 颜色: #724646 - 在目标区内
+鼠标位置: (955, 550)(调试用) - 颜色: #652323 - 在目标区内
+鼠标位置: (965, 551)(调试用) - 颜色: #662121 - 在目标区内
+鼠标位置: (966, 551)(调试用) - 颜色: #662121 - 在目标区内
+鼠标位置: (973, 551)(调试用) - 颜色: #672020 - 在目标区内
+鼠标位置: (983, 555)(调试用) - 颜色: #661d1d - 在目标区内
+鼠标位置: (990, 562)(调试用) - 颜色: #631a1a - 在目标区内
+鼠标位置: (1007, 575)(调试用) - 颜色: #5d1414 - 在目标区内
+鼠标位置: (1022, 584)(调试用) - 颜色: #5a1010 - 在目标区内
+鼠标位置: (1047, 590)(调试用) - 颜色: #5a0c0c - 在目标区内
+鼠标位置: (1076, 611)(调试用) - 颜色: #520707 - 在目标区内
+鼠标位置: (1083, 615)(调试用) - 颜色: #500606 - 在目标区内
+鼠标位置: (1085, 618)(调试用) - 颜色: #4f0505 - 在目标区内
+鼠标位置: (1093, 627)(调试用) - 颜色: #4b0404 - 在目标区内
+鼠标位置: (1100, 633)(调试用) - 颜色: #480303 - 在目标区内
+鼠标位置: (1116, 648)(调试用) - 颜色: #410202 - 在目标区内
+鼠标位置: (1117, 649)(调试用) - 颜色: #410202 - 在目标区内
+鼠标位置: (1122, 653)(调试用) - 颜色: #3f0101 - 在目标区内
+鼠标位置: (1123, 652)(调试用) - 颜色: #400101 - 在目标区内
+鼠标位置: (1108, 601)(调试用) - 颜色: #5d0505 - 在目标区内
+鼠标位置: (1091, 536)(调试用) - 颜色: #830d0d - 在目标区内
+鼠标位置: (1079, 474)(调试用) - 颜色: #ab1a1a - 在目标区内
+鼠标位置: (1067, 446)(调试用) - 颜色: #be2424 - 在目标区内
+鼠标位置: (1049, 425)(调试用) - 颜色: #cb3131 - 在目标区内
+鼠标位置: (1005, 409)(调试用) - 颜色: #d54b4b - 在目标区内
+鼠标位置: (937, 409)(调试用) - 颜色: #d06d6d - 在目标区内
+鼠标位置: (872, 437)(调试用) - 颜色: #b17777 - 在目标区内
+鼠标位置: (858, 481)(调试用) - 颜色: #895d5d - 在目标区内
+鼠标位置: (874, 552)(调试用) - 颜色: #563131 - 在目标区内
+鼠标位置: (878, 568)(调试用) - 颜色: #4d2929 - 在目标区内
+鼠标位置: (881, 570)(调试用) - 颜色: #4c2828 - 在目标区内
+鼠标位置: (911, 558)(调试用) - 颜色: #582828 - 在目标区内
+鼠标位置: (979, 440)(调试用) - 颜色: #b94949 - 在目标区内
+鼠标位置: (1013, 396)(调试用) - 颜色: #e04d4d - 在目标区内
+鼠标位置: (1018, 389)(调试用) - 颜色: #e64d4d - 在目标区内
+鼠标位置: (936, 402)(调试用) - 颜色: #d67272 - 在目标区内
+鼠标位置: (844, 377)(调试用) - 颜色: #ebb8b8 - 在目标区内
+鼠标位置: (786, 363)(调试用) - 颜色: #fbeaea - 在目标区内
+鼠标位置: (771, 360)(调试用) - 颜色: #fef7f7 - 在目标区内
+鼠标位置: (771, 360)(调试用) - 颜色: #fef7f7 - 在目标区内
+鼠标位置: (771, 357)(调试用) - 颜色: #fffbfb - 在目标区内
+鼠标位置: (771, 353)(调试用) - 颜色: #ffffff - 在目标区内
+鼠标位置: (771, 351)(调试用) - 颜色: #ffffff - 在目标区内
+鼠标位置: (769, 347)(调试用) - 颜色: #ffffff - 在目标区内
+鼠标位置: (767, 345)(调试用) - 颜色: #ffffff - 在目标区内
+鼠标位置: (767, 345)(调试用) - 颜色: #ffffff - 在目标区内
+鼠标位置: (767, 345)(调试用) - 颜色: #ffffff - 在目标区内
+鼠标位置: (767, 361)(调试用) - 颜色: #fdf9f9 - 在目标区内
+鼠标位置: (781, 429)(调试用) - 颜色: #b0a5a5 - 在目标区内
+鼠标位置: (795, 464)(调试用) - 颜色: #8f7f7f - 在目标区内
+鼠标位置: (797, 490)(调试用) - 颜色: #796969 - 在目标区内
+鼠标位置: (796, 514)(调试用) - 颜色: #655757 - 在目标区内
+鼠标位置: (795, 536)(调试用) - 颜色: #554848 - 在目标区内
+鼠标位置: (802, 567)(调试用) - 颜色: #413535 - 在目标区内
+鼠标位置: (804, 586)(调试用) - 颜色: #372a2a - 在目标区内
+鼠标位置: (800, 619)(调试用) - 颜色: #251c1c - 在目标区内
+鼠标位置: (798, 629)(调试用) - 颜色: #201818 - 在目标区内
+鼠标位置: (793, 638)(调试用) - 颜色: #1c1515 - 在目标区内
+鼠标位置: (778, 667)(调试用) - 颜色: #0f0d0d - 在目标区内
+鼠标位置: (777, 683)(调试用) - 颜色: #0b0808 - 在目标区内
+鼠标位置: (777, 683)(调试用) - 颜色: #0b0808 - 在目标区内
+鼠标位置: (779, 687)(调试用) - 颜色: #0a0808 - 在目标区内
+鼠标位置: (780, 691)(调试用) - 颜色: #090707 - 在目标区内
+鼠标位置: (781, 693)(调试用) - 颜色: #080606 - 在目标区内
+鼠标位置: (781, 697)(调试用) - 颜色: #080505 - 在目标区内
+鼠标位置: (781, 699)(调试用) - 颜色: #070505 - 在目标区内
+鼠标位置: (781, 699)(调试用) - 颜色: #070505 - 在目标区内
+鼠标位置: (830, 704)(调试用) - 颜色: #0a0404 - 在目标区内
+鼠标位置: (938, 706)(调试用) - 颜色: #110202 - 在目标区内
+鼠标位置: (957, 698)(调试用) - 颜色: #160303 - 在目标区内
+鼠标位置: (992, 695)(调试用) - 颜色: #1a0202 - 在目标区内
+鼠标位置: (1026, 695)(调试用) - 颜色: #1d0202 - 在目标区内
+鼠标位置: (1065, 699)(调试用) - 颜色: #1e0101 - 在目标区内
+鼠标位置: (1090, 703)(调试用) - 颜色: #1e0000 - 在目标区内
+鼠标位置: (1108, 703)(调试用) - 颜色: #200000 - 在目标区内
+鼠标位置: (1122, 705)(调试用) - 颜色: #1f0000 - 在目标区内
+鼠标位置: (1133, 708)(调试用) - 颜色: #1f0000 - 在目标区内
+鼠标位置: (1133, 708)(调试用) - 颜色: #1f0000 - 在目标区内
+鼠标位置: (1133, 708)(调试用) - 颜色: #1f0000 - 在目标区内
+鼠标位置: (1137, 707)(调试用) - 颜色: #1f0000 - 在目标区内
+鼠标位置: (1144, 700)(调试用) - 颜色: #240000 - 在目标区内
+鼠标位置: (1146, 646)(调试用) - 颜色: #460000 - 在目标区内
+鼠标位置: (1103, 522)(调试用) - 颜色: #8e0c0c - 在目标区内
+鼠标位置: (1085, 470)(调试用) - 颜色: #af1818 - 在目标区内
+鼠标位置: (1084, 451)(调试用) - 颜色: #bc1c1c - 在目标区内
+鼠标位置: (1085, 428)(调试用) - 颜色: #cc2020 - 在目标区内
+鼠标位置: (1085, 405)(调试用) - 颜色: #dd2525 - 在目标区内
+鼠标位置: (1069, 392)(调试用) - 颜色: #e63030 - 在目标区内
+鼠标位置: (975, 382)(调试用) - 颜色: #ea6969 - 在目标区内
+鼠标位置: (888, 378)(调试用) - 颜色: #ec9e9e - 在目标区内
+鼠标位置: (823, 399)(调试用) - 颜色: #d3aeae - 在目标区内
+鼠标位置: (849, 480)(调试用) - 颜色: #886161 - 在目标区内
+鼠标位置: (899, 518)(调试用) - 颜色: #723c3c - 在目标区内
+鼠标位置: (934, 518)(调试用) - 颜色: #773434 - 在目标区内
+鼠标位置: (964, 478)(调试用) - 颜色: #993d3d - 在目标区内
+鼠标位置: (943, 431)(调试用) - 颜色: #bd5d5d - 在目标区内
+鼠标位置: (892, 407)(调试用) - 颜色: #cf8484 - 在目标区内
+鼠标位置: (860, 434)(调试用) - 颜色: #b27e7e - 在目标区内
+鼠标位置: (883, 477)(调试用) - 颜色: #8f5858 - 在目标区内
+鼠标位置: (1048, 506)(调试用) - 颜色: #911c1c - 在目标区内
+鼠标位置: (1065, 481)(调试用) - 颜色: #a51d1d - 在目标区内
+鼠标位置: (1051, 448)(调试用) - 颜色: #ba2a2a - 在目标区内
+鼠标位置: (991, 420)(调试用) - 颜色: #ca4d4d - 在目标区内
+鼠标位置: (908, 413)(调试用) - 颜色: #ca7878 - 在目标区内
+鼠标位置: (893, 431)(调试用) - 颜色: #b87373 - 在目标区内
+鼠标位置: (895, 444)(调试用) - 颜色: #ad6969 - 在目标区内
+鼠标位置: (895, 444)(调试用) - 颜色: #ad6969 - 在目标区内
+鼠标位置: (895, 444)(调试用) - 颜色: #ad6969 - 在目标区内
+鼠标位置: (897, 444)(调试用) - 颜色: #ad6868 - 在目标区内
+鼠标位置: (897, 444)(调试用) - 颜色: #ad6868 - 在目标区内
+鼠标位置: (897, 444)(调试用) - 颜色: #ad6868 - 在目标区内
+鼠标位置: (897, 444)(调试用) - 颜色: #ad6868 - 在目标区内
+鼠标位置: (897, 444)(调试用) - 颜色: #ad6868 - 在目标区内
+鼠标位置: (897, 444)(调试用) - 颜色: #ad6868 - 在目标区内
+鼠标位置: (897, 444)(调试用) - 颜色: #ad6868 - 在目标区内
+鼠标位置: (897, 444)(调试用) - 颜色: #ad6868 - 在目标区内
+鼠标位置: (897, 444)(调试用) - 颜色: #ad6868 - 在目标区内
+鼠标位置: (897, 444)(调试用) - 颜色: #ad6868 - 在目标区内
+鼠标位置: (958, 501)(调试用) - 颜色: #873535 - 在目标区内
+鼠标位置: (1115, 636)(调试用) - 颜色: #480202 - 在目标区内
+Resetting cache.
+Early init took 226.01s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.01s
+Loading persistent took 0.00s
+Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
+Running init code took 0.06s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.23s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+鼠标位置: (958, 709)(调试用) - 颜色: #120202 - 在目标区内
+鼠标位置: (955, 676)(调试用) - 颜色: #1f0505 - 在目标区内
+鼠标位置: (951, 664)(调试用) - 颜色: #240707 - 在目标区内
+鼠标位置: (937, 658)(调试用) - 颜色: #250909 - 在目标区内
+鼠标位置: (848, 656)(调试用) - 颜色: #1b0d0d - 在目标区内
+鼠标位置: (767, 662)(调试用) - 颜色: #100e0e - 在目标区内
+鼠标位置: (763, 498)(调试用) - 颜色: #6d6c6c - 在目标区内
+鼠标位置: (774, 490)(调试用) - 颜色: #766f6f - 在目标区内
+鼠标位置: (829, 481)(调试用) - 颜色: #856666 - 在目标区内
+鼠标位置: (922, 466)(调试用) - 颜色: #9d5151 - 在目标区内
+鼠标位置: (945, 460)(调试用) - 颜色: #a54c4c - 在目标区内
+鼠标位置: (1006, 460)(调试用) - 颜色: #ac3737 - 在目标区内
+鼠标位置: (1012, 455)(调试用) - 颜色: #b13636 - 在目标区内
+鼠标位置: (1024, 427)(调试用) - 颜色: #c83b3b - 在目标区内
+鼠标位置: (1017, 383)(调试用) - 颜色: #eb5050 - 在目标区内
+鼠标位置: (1004, 356)(调试用) - 颜色: #ff6565 - 在目标区内
+鼠标位置: (992, 343)(调试用) - 颜色: #ff7474 - 在目标区内
+鼠标位置: (1071, 351)(调试用) - 颜色: #ff3b3b - 在目标区内
+鼠标位置: (1051, 375)(调试用) - 颜色: #f24040 - 在目标区内
+鼠标位置: (1028, 401)(调试用) - 颜色: #dd4343 - 在目标区内
+鼠标位置: (1010, 415)(调试用) - 颜色: #d04646 - 在目标区内
+鼠标位置: (995, 426)(调试用) - 颜色: #c64949 - 在目标区内
+鼠标位置: (985, 432)(调试用) - 颜色: #c04a4a - 在目标区内
+鼠标位置: (978, 434)(调试用) - 颜色: #be4c4c - 在目标区内
+鼠标位置: (973, 436)(调试用) - 颜色: #bc4e4e - 在目标区内
+鼠标位置: (968, 440)(调试用) - 颜色: #b84e4e - 在目标区内
+鼠标位置: (961, 446)(调试用) - 颜色: #b24e4e - 在目标区内
+鼠标位置: (954, 454)(调试用) - 颜色: #ab4c4c - 在目标区内
+鼠标位置: (950, 458)(调试用) - 颜色: #a74c4c - 在目标区内
+鼠标位置: (943, 472)(调试用) - 颜色: #9b4747 - 在目标区内
+鼠标位置: (940, 484)(调试用) - 颜色: #914242 - 在目标区内
+鼠标位置: (936, 493)(调试用) - 颜色: #8a3f3f - 在目标区内
+鼠标位置: (936, 496)(调试用) - 颜色: #883e3e - 在目标区内
+鼠标位置: (934, 502)(调试用) - 颜色: #833b3b - 在目标区内
+鼠标位置: (934, 509)(调试用) - 颜色: #7e3838 - 在目标区内
+鼠标位置: (933, 513)(调试用) - 颜色: #7b3737 - 在目标区内
+鼠标位置: (933, 514)(调试用) - 颜色: #7a3636 - 在目标区内
+鼠标位置: (933, 515)(调试用) - 颜色: #793636 - 在目标区内
+鼠标位置: (933, 517)(调试用) - 颜色: #783535 - 在目标区内
+鼠标位置: (936, 518)(调试用) - 颜色: #783434 - 在目标区内
+鼠标位置: (943, 519)(调试用) - 颜色: #783232 - 在目标区内
+鼠标位置: (953, 518)(调试用) - 颜色: #7a3030 - 在目标区内
+鼠标位置: (968, 507)(调试用) - 颜色: #843030 - 在目标区内
+鼠标位置: (978, 473)(调试用) - 颜色: #9f3b3b - 在目标区内
+鼠标位置: (980, 444)(调试用) - 颜色: #b64747 - 在目标区内
+鼠标位置: (979, 422)(调试用) - 颜色: #c85252 - 在目标区内
+鼠标位置: (973, 412)(调试用) - 颜色: #d05a5a - 在目标区内
+鼠标位置: (966, 395)(调试用) - 颜色: #de6666 - 在目标区内
+鼠标位置: (965, 379)(调试用) - 颜色: #ed7070 - 在目标区内
+鼠标位置: (972, 357)(调试用) - 颜色: #ff7979 - 在目标区内
+鼠标位置: (979, 346)(调试用) - 颜色: #ff7b7b - 在目标区内
+鼠标位置: (1141, 374)(调试用) - 颜色: #f50b0b - 在目标区内
+鼠标位置: (1149, 387)(调试用) - 颜色: #ed0505 - 在目标区内
+鼠标位置: (1160, 401)(调试用) - 颜色: #e40000 - 在目标区内
+鼠标位置: (1139, 497)(调试用) - 颜色: #a40505 - 在目标区内
+鼠标位置: (1095, 516)(调试用) - 颜色: #910f0f - 在目标区内
+鼠标位置: (1044, 554)(调试用) - 颜色: #701313 - 在目标区内
+鼠标位置: (1028, 579)(调试用) - 颜色: #5e1111 - 在目标区内
+鼠标位置: (1027, 580)(调试用) - 颜色: #5d1111 - 在目标区内
+鼠标位置: (1026, 583)(调试用) - 颜色: #5b1010 - 在目标区内
+鼠标位置: (1026, 583)(调试用) - 颜色: #5b1010 - 在目标区内
+鼠标位置: (1026, 583)(调试用) - 颜色: #5b1010 - 在目标区内
+鼠标位置: (1026, 586)(调试用) - 颜色: #591010 - 在目标区内
+鼠标位置: (1029, 589)(调试用) - 颜色: #580f0f - 在目标区内
+鼠标位置: (1025, 602)(调试用) - 颜色: #500d0d - 在目标区内
+鼠标位置: (1019, 608)(调试用) - 颜色: #4b0c0c - 在目标区内
+鼠标位置: (994, 598)(调试用) - 颜色: #4d1111 - 在目标区内
+鼠标位置: (985, 586)(调试用) - 颜色: #531515 - 在目标区内
+鼠标位置: (983, 564)(调试用) - 颜色: #601a1a - 在目标区内
+鼠标位置: (1001, 533)(调试用) - 颜色: #772020 - 在目标区内
+鼠标位置: (1012, 523)(调试用) - 颜色: #802121 - 在目标区内
+鼠标位置: (1021, 524)(调试用) - 颜色: #801e1e - 在目标区内
+鼠标位置: (1016, 556)(调试用) - 颜色: #6b1717 - 在目标区内
+鼠标位置: (1013, 597)(调试用) - 颜色: #510f0f - 在目标区内
+鼠标位置: (1047, 599)(调试用) - 颜色: #550b0b - 在目标区内
+鼠标位置: (1086, 581)(调试用) - 颜色: #660909 - 在目标区内
+鼠标位置: (1109, 534)(调试用) - 颜色: #880a0a - 在目标区内
+鼠标位置: (1102, 514)(调试用) - 颜色: #940d0d - 在目标区内
+鼠标位置: (1060, 505)(调试用) - 颜色: #931919 - 在目标区内
+鼠标位置: (1020, 524)(调试用) - 颜色: #801e1e - 在目标区内
+鼠标位置: (1009, 557)(调试用) - 颜色: #691818 - 在目标区内
+鼠标位置: (1033, 568)(调试用) - 颜色: #661212 - 在目标区内
+鼠标位置: (1085, 545)(调试用) - 颜色: #7d0d0d - 在目标区内
+鼠标位置: (1088, 527)(调试用) - 颜色: #890f0f - 在目标区内
+鼠标位置: (1003, 548)(调试用) - 颜色: #6e1c1c - 在目标区内
