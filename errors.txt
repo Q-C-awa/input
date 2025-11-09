@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/sehuan.rpy", line 197: 'spa' is not a keyword argument or valid child of the hbox statement.
-    spa
-       ^
+File "game/sehuan.rpy", line 203: the action keyword argument was not given a value.
+    textbutton "确认选择此颜色" action 
+                                ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sun Nov  9 09:28:13 2025
+Sun Nov  9 10:26:52 2025

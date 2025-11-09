@@ -1,52 +1,59 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "renpy/common/00start.rpy", line 219, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 551, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 551, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 565, in _execute_python_hide
-    renpy.load(renpy.session["_reload_slot"])
-  File "game/sehuan.rpy", line 144, in execute_default
-    default color_displayable_instance = ColorSolidDisplayable(color_solid_size_x, color_solid_size_y, step = color_solid_step) # 颜色渲染分辨率以及精度
-  File "game/sehuan.rpy", line 144, in <module>
-    default color_displayable_instance = ColorSolidDisplayable(color_solid_size_x, color_solid_size_y, step = color_solid_step) # 颜色渲染分辨率以及精度
-NameError: name 'color_solid_size_x' is not defined
+While processing the color property of anonymous style:
+  File "renpy/common/00gamemenu.rpy", line 174, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 174, in <module>
+    $ ui.interact()
+IndexError: string index out of range
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 219, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 551, in script
-    python hide:
+  File "renpy/common/00gamemenu.rpy", line 174, in script
+    $ ui.interact()
   File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 551, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 565, in _execute_python_hide
-    renpy.load(renpy.session["_reload_slot"])
-  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\loadsave.py", line 838, in load
-    log.unfreeze(roots, label="_after_load")
-  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\rollback.py", line 1134, in unfreeze
-    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
-  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\rollback.py", line 1031, in rollback
-    renpy.exports.execute_default_statement(False)
-  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
-    i.execute_default(start)
-  File "game/sehuan.rpy", line 144, in execute_default
-    default color_displayable_instance = ColorSolidDisplayable(color_solid_size_x, color_solid_size_y, step = color_solid_step) # 颜色渲染分辨率以及精度
-  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/sehuan.rpy", line 144, in <module>
-    default color_displayable_instance = ColorSolidDisplayable(color_solid_size_x, color_solid_size_y, step = color_solid_step) # 颜色渲染分辨率以及精度
-NameError: name 'color_solid_size_x' is not defined
+  File "renpy/common/00gamemenu.rpy", line 174, in <module>
+    $ ui.interact()
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\display\core.py", line 2218, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\display\core.py", line 2748, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\display\screen.py", line 485, in visit_all
+    self.child.visit_all(callback, seen=None)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\display\displayable.py", line 436, in visit_all
+    callback(self)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\display\core.py", line 2748, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\text\text.py", line 2246, in per_interact
+    if self.style.slow_abortable:
+  File "gen3-static/styleclass.pxi", line 613, in renpy.styledata.styleclass.Style.slow_abortable.__get__
+  File "style.pyx", line 493, in renpy.style.StyleCore._get
+  File "style.pyx", line 717, in renpy.style.build_style
+  File "style.pyx", line 714, in renpy.style.build_style
+  File "gen3-static/style_functions.pyx", line 349, in style_functions.color_property
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\color.py", line 139, in __new__
+    if c[0] == '#':
+IndexError: string index out of range
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.3.7.25031702
 input 1145.1
-Sun Nov  9 09:40:18 2025
+Sun Nov  9 10:29:13 2025

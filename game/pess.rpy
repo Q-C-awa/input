@@ -276,7 +276,7 @@ label permission_test:
     jump permission_test
 
 label start:
-    show csauchas
+    show weihua
     menu:
         "权限测试":
             jump permission_test
