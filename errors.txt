@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/sehuan.rpy", line 141: invalid syntax
-        )default current_color_code = mouse_display.get_color_code_string()
-          ^
+File "game/sehuan.rpy", line 197: 'spa' is not a keyword argument or valid child of the hbox statement.
+    spa
+       ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sat Nov  8 19:52:25 2025
+Sun Nov  9 09:28:13 2025

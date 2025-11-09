@@ -2,11 +2,12 @@ init python:
     import pygame
     
     class ColorSolidDisplayable(renpy.Displayable):
-        def __init__(self, width, height, step=4, **kwargs):
+        def __init__(self, width, height, step=4, base_color="#ff0000", **kwargs):
             super(ColorSolidDisplayable, self).__init__(**kwargs)
             self.width = width
             self.height = height
             self.step = step
+            self.base_color = base_color
             self.colors = self.precompute_colors()
         def precompute_colors(self):
             colors = {}
@@ -126,22 +127,30 @@ init python:
             if ev.type == pygame.MOUSEMOTION:
                 self.mouse_x, self.mouse_y = ev.pos
             return None
-        # 添加获取颜色代码字符串的方法
+        # 获取颜色代码字符串
         def get_color_code_string(self):
             return self.color_code_string
 
-default image_x = (config.screen_width - 400) / 2
-default image_y = (config.screen_height - 400) / 2
-default image_width = 400
-default image_height = 400
-default color_displayable_instance = ColorSolidDisplayable(1000, 1000, step=6)
+default color_solid_size_x = 1000
+default color_solid_size_y = 1000
+default color_solid_step = 6
+default color_solid_size_zoom = 0.4
+
+default image_width = color_solid_size_x * color_solid_size_zoom
+default image_height = color_solid_size_y * color_solid_size_zoom
+default image_x = (config.screen_width - image_width) / 2
+default image_y = (config.screen_height - image_height) / 2
+
+default color_displayable_instance = ColorSolidDisplayable(color_solid_size_x, color_solid_size_y, step = color_solid_step) # 颜色渲染分辨率以及精度
 default mouse_display = MousePositionDisplay(
         target_rect=(image_x, image_y, image_width, image_height),
         color_displayable=color_displayable_instance
-    )
+        )
+
 default current_color_code = mouse_display.get_color_code_string()
+
 image color_solid_displayable_medium_image:
-    zoom 0.4
+    zoom color_solid_size_zoom
     color_displayable_instance
 
 screen sehuan_screen:
@@ -151,9 +160,14 @@ screen sehuan_screen:
     add "color_solid_displayable_medium_image" at truecenter
     textbutton "返回" xalign 1.0 yalign 1.0 action Return()
     timer 0.001 repeat True action SetScreenVariable("current_color_code", mouse_display.get_color_code_string())
-    add Solid(current_color_code):
-        align(0.5,0.8)
-        size(50,50)
+    hbox:
+        spacing 20
+        add Solid(current_color_code):
+            size(50,50)
+        button:
+            text "当前颜色代码: [current_color_code]"
+            text "确认设置"
+            action SetVariable("current_color_code",gui.accent_color)
 
 label sehuan:
     call screen sehuan_screen

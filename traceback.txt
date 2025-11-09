@@ -1,38 +1,52 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 195, in script
-    python:
-  File "renpy/common/00start.rpy", line 196, in <module>
-    renpy.execute_default_statement(True)
-  File "game/sehuan.rpy", line 138, in execute_default
-    default current_color_code = mouse_display.get_color_code_string()
-  File "game/sehuan.rpy", line 138, in <module>
-    default current_color_code = mouse_display.get_color_code_string()
-NameError: name 'mouse_display' is not defined
+  File "renpy/common/00start.rpy", line 219, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 551, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 551, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 565, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+  File "game/sehuan.rpy", line 144, in execute_default
+    default color_displayable_instance = ColorSolidDisplayable(color_solid_size_x, color_solid_size_y, step = color_solid_step) # 颜色渲染分辨率以及精度
+  File "game/sehuan.rpy", line 144, in <module>
+    default color_displayable_instance = ColorSolidDisplayable(color_solid_size_x, color_solid_size_y, step = color_solid_step) # 颜色渲染分辨率以及精度
+NameError: name 'color_solid_size_x' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 195, in script
-    python:
+  File "renpy/common/00start.rpy", line 219, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 551, in script
+    python hide:
   File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/00start.rpy", line 196, in <module>
-    renpy.execute_default_statement(True)
+  File "renpy/common/00keymap.rpy", line 551, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 565, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\loadsave.py", line 838, in load
+    log.unfreeze(roots, label="_after_load")
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\rollback.py", line 1134, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\rollback.py", line 1031, in rollback
+    renpy.exports.execute_default_statement(False)
   File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
     i.execute_default(start)
-  File "game/sehuan.rpy", line 138, in execute_default
-    default current_color_code = mouse_display.get_color_code_string()
+  File "game/sehuan.rpy", line 144, in execute_default
+    default color_displayable_instance = ColorSolidDisplayable(color_solid_size_x, color_solid_size_y, step = color_solid_step) # 颜色渲染分辨率以及精度
   File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/sehuan.rpy", line 138, in <module>
-    default current_color_code = mouse_display.get_color_code_string()
-NameError: name 'mouse_display' is not defined
+  File "game/sehuan.rpy", line 144, in <module>
+    default color_displayable_instance = ColorSolidDisplayable(color_solid_size_x, color_solid_size_y, step = color_solid_step) # 颜色渲染分辨率以及精度
+NameError: name 'color_solid_size_x' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.3.7.25031702
 input 1145.1
-Sat Nov  8 19:52:10 2025
+Sun Nov  9 09:40:18 2025
