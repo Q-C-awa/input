@@ -14,8 +14,8 @@ init python:
         vec2 uv = v_tex_coord;
         vec2 center = vec2(0.5, 0.5);
         float dist = distance(uv, center);
-        float outer_radius = 0.48;
-        float inner_radius = 0.38;
+        float outer_radius = 0.4;
+        float inner_radius = 0.1;
         
         if(dist >= inner_radius && dist <= outer_radius) {
             float angle = atan(center.y - uv.y , center.x - uv.x); 
@@ -46,21 +46,24 @@ init python:
     """)
     
     class ColorPicker(renpy.Displayable):
-        def __init__(self, width=800, height=800, xpos=0.5, ypos=0.5, **kwargs):
+        def __init__(self, width=800, height=800, xpos=0.5, ypos=0.5, color_picker_zoom=1.0, step=6,**kwargs):
             super(ColorPicker, self).__init__(**kwargs)
-            self.width = width
-            self.height = height
+            self.color_picker_zoom = color_picker_zoom
+            self.width = int(width * color_picker_zoom)
+            self.height = int(height * color_picker_zoom)
             self.xpos = xpos
             self.ypos = ypos
-            self.center_x = width // 2
-            self.center_y = height // 2
-            self.outer_radius = min(width, height) // 2 - 10
-            self.inner_radius = self.outer_radius - 90 # 圆环滑块的位置
-            self.rect_width = 420
-            self.rect_height = 420
-            self.rect_step = 6
-            self.rect_x = (width - self.rect_width) // 2
-            self.rect_y = (height - self.rect_height) // 2
+            self.center_x = self.width // 2
+            self.center_y = self.height // 2
+            base_radius = min(width, height) // 2
+            self.outer_radius = int(base_radius * 0.98 * color_picker_zoom) 
+            self.inner_radius = int(base_radius * 0.74 * color_picker_zoom)
+            self.slider_radius = (self.inner_radius + self.outer_radius) // 2
+            self.rect_width = int(420 * color_picker_zoom)
+            self.rect_height = int(420 * color_picker_zoom)
+            self.rect_step = step
+            self.rect_x = (self.width - self.rect_width) // 2
+            self.rect_y = (self.height - self.rect_height) // 2
             self.angle = 0.0 
             self.slider_rel_x = 0.5 
             self.slider_rel_y = 0.5
@@ -149,10 +152,9 @@ init python:
                 self.slider_rel_x * self.rect_width,
                 self.slider_rel_y * self.rect_height
             ).hexcode
-            ring_slider_radius = (self.inner_radius + self.outer_radius) // 2.0
-            ring_slider_x = actual_x + self.center_x + ring_slider_radius * math.cos(self.angle)
-            ring_slider_y = actual_y + self.center_y + ring_slider_radius * math.sin(self.angle)
-            slider_size = 70 # 圆环滑块的大小
+            ring_slider_x = actual_x + self.center_x + self.slider_radius * math.cos(self.angle)
+            ring_slider_y = actual_y + self.center_y + self.slider_radius * math.sin(self.angle)
+            slider_size = int(min(self.width, self.height) * 0.15 * self.color_picker_zoom)  # 滑块大小
             slider_pos_x = ring_slider_x - slider_size // 2
             slider_pos_y = ring_slider_y - slider_size // 2
             slider_border = Solid("#000000", xsize=slider_size, ysize=slider_size)
@@ -164,7 +166,7 @@ init python:
             slider_inner = Solid("#FFFFFF", xsize=inner_size, ysize=inner_size)
             slider_inner_render = renpy.render(slider_inner, width, height, st, at)
             render.blit(slider_inner_render, (inner_pos_x, inner_pos_y))
-            rect_slider_size = 20 # 矩形滑块的大小
+            rect_slider_size = int(min(self.width, self.height) * 0.05 * self.color_picker_zoom) 
             rect_slider_pos_x = rect_slider_x - rect_slider_size // 2
             rect_slider_pos_y = rect_slider_y - rect_slider_size // 2
             rect_slider_border = Solid("#000000", xsize=rect_slider_size, ysize=rect_slider_size)
@@ -207,7 +209,6 @@ init python:
             final_color_render = renpy.render(final_color_display, width, height, st, at)
             render.blit(final_color_render, (20, 80))
             renpy.redraw(self, 0.01)
-            print(final_color_text,base_color_text,angle_degrees,position_render)
             return render
             
         def event(self, ev, x, y, st):
@@ -258,22 +259,24 @@ init python:
         def get_final_color(self):
             return self.final_color
 
-default color_picker_width = 800
+default color_picker_width = 800 # 数越大 内存越爆炸
 default color_picker_height = 800
+default color_picker_zoom = 0.5
+default color_picker_step = 5 # 数越小cpu越爆炸
 
 screen color_picker_screen:
     tag menu
     modal True
-
     default color_picker = ColorPicker(
         width=color_picker_width,
         height=color_picker_height,
         xpos=0.5,
-        ypos=0.5
+        ypos=0.5,
+        color_picker_zoom=color_picker_zoom,
+        step=color_picker_step
     )
-    
     add color_picker
-    
+
     textbutton "返回" xalign 1.0 yalign 1.0 action Return()
     
     hbox:
@@ -286,11 +289,10 @@ screen color_picker_screen:
             text "最终颜色: [color_picker.get_final_color()]":
                 color "#000000"
                 size 25
-            textbutton "确认选择此颜色" action [SetVariable("gui.accent_color", color_picker.get_final_color()), Return()]
+            textbutton "确认选择此颜色" action [SetVariable("gui.accent_color", color_picker.get_final_color())]
         text "{b}颜色预览{/b}":
             size 50
             color gui.accent_color
 
 label sehuan:
     call screen color_picker_screen
-    return
