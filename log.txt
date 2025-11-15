@@ -1,46 +1,72 @@
-2025-11-09 02:45:26 UTC
-Windows-10-10.0.22621
-Ren'Py 8.3.7.25031702
+2025-11-15 05:28:44 UTC
+Windows-11-10.0.22631-SP0
+Ren'Py 8.4.1.25072401
 
-Early init took 0.05s
-Loading error handling took 0.02s
-Loading script took 0.10s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Failed to initialize steam: Exception('steamapi.InitFlat returned 1 (No appID found.  Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.)')
-Running init code took 0.13s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
+Early init took 32 ms
+Loading error handling took 64 ms
+Loading script took 743 ms
+Loading save slot metadata took 20 ms
+Loading persistent took 0 ms
+Running init code took 44 ms
+Loading analysis data took 11 ms
+Analyze and compile ATL took 2 ms
+Reloading save slot metadata took 12 ms
 Backing up script files to 'C:\\Users\\PC\\AppData\\Roaming/RenPy/backups\\input':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.02s
+Dump and make backups took 26 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 24 ms
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.16s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.20s
+Creating interface object took 149 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 11 ms
+Save screen analysis took 9 ms
+Save pyanalysis took 2 ms
+Save bytecode took 18 ms
+Running _start took 1 ms
+Interface start took 109 ms
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2560, 1440)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
+Vendor: 'NVIDIA Corporation'
+Renderer: 'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 560.94'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 2560, 'current_h': 1440, 'refresh_rate': 180, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
+INFO:renpy_warp_service:service thread started. periodically scanning ports for warp server
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 2a484400 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x000000002a46c830>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 3d820f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x000000003d8280e0>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 42840f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x0000000042848290>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 34818f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x0000000034814440>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 2a2c0f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x000000002a2885f0>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 3d4d8f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x000000003d4d07a0>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 29968f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x00000000298bc950>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 3d0e0f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x000000003d0d8b00>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 29d8cf40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x0000000029d2ccb0>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 3d5f4f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x000000003d6b4e60>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 29b28f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x0000000029b7d010>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 2a5ccf40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x000000002a6351c0>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 2a3b4f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x000000002a449370>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 3d42cf40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x000000003d475520>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 29808f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x000000002982d6d0>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 33eccf40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x0000000033f09880>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 29a38f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x0000000029a33d40>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 3d6f8f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x000000003d6d7ef0>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 143d0f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x00000000144280e0>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 347b4f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x0000000034734290>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 348c8f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x0000000034848440>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 3d37cf40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x000000003d3145f0>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 2992cf40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x000000002998c7a0>]>
+最终颜色: #844141 基础颜色: #ff0000 0.0 <Render 42888f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x000000002a170950>]>
+最终颜色: #844444 基础颜色: #ff0000 0.0 <Render 22394f40 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x0000000007dd6c90>]>
+最终颜色: #744040 基础颜色: #ff0000 0.0 <Render 29dc1f80 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x000000002238f6e0>]>
+最终颜色: #6b4040 基础颜色: #ff0000 0.0 <Render 29ba5f80 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x0000000042848830>]>
+最终颜色: #684040 基础颜色: #ff0000 0.0 <Render 2a2c5f80 of [<renpy.text.text.Text object ('圆环角度: 0.0°') at 0x0000000042849cd0>]>
+最终颜色: #664141 基础颜色: #ff0000 0.0 <Render 3d1a9f80 of [<renpy.tex

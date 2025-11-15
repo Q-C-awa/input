@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/sehuan.rpy", line 203: the action keyword argument was not given a value.
-    textbutton "确认选择此颜色" action 
-                                ^
+File "game/sehuan.rpy", line 60: cannot assign to expression
+    self.inner_radius = self.outer_radius - 45=
+                            ^^^^^^^^^^^^^^^^^^^^^^
 
-Ren'Py Version: Ren'Py 8.3.7.25031702
-Sun Nov  9 10:26:52 2025
+Ren'Py Version: Ren'Py 8.4.1.25072401
+Sat Nov 15 13:17:59 2025
