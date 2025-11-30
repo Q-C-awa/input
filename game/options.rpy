@@ -1,10 +1,17 @@
-﻿define build.classify_options = [
+﻿define build.android_permissions  = [
     "android.permission.READ_EXTERNAL_STORAGE",
     "android.permission.WRITE_EXTERNAL_STORAGE",
     "android.permission.MANAGE_EXTERNAL_STORAGE",
     "android.permission.CAMERA"
 ]
 
+
+init -99 python:
+    def show_code(func):
+        import inspect
+        print(inspect.getsource(func))
+
+define config.developer = True    
 ## 用户可读的游戏名称。此命令用来设置默认窗口标题，并且会在界面和错误报告中出
 ## 现。
 ##

@@ -1,6 +1,7 @@
 init python:
     import pygame
     import math
+    import time
     
     renpy.register_shader("white_round", 
         variables="""
@@ -111,32 +112,89 @@ init python:
             self.rect_colors_cache = None
             self.cache_base_color = None
             
+            # 预计算常量
+            self._two_pi = 2.0 * math.pi
+            self._pi = math.pi
+            
         def get_hue_color(self, angle):
             """根据角度获取HSV颜色空间的颜色"""
-            hue = angle / (2 * math.pi)
+            hue = angle / self._two_pi
             return Color(hsv=(hue, 1.0, 1.0))
             
         def get_rect_color_at_position(self, x, y):
             """获取矩形中指定位置的颜色"""
-            u = max(0.0, min(1.0, x / float(self.rect_width - 1) if self.rect_width > 1 else 0))
-            v = max(0.0, min(1.0, y / float(self.rect_height - 1) if self.rect_height > 1 else 0))
+            # 使用局部变量避免重复属性访问
+            rect_width = self.rect_width
+            rect_height = self.rect_height
+            
+            # 优化边界检查和归一化计算
+            if rect_width <= 1:
+                u = 0.0
+            else:
+                u = max(0.0, min(1.0, x / (rect_width - 1)))
+                
+            if rect_height <= 1:
+                v = 0.0
+            else:
+                v = max(0.0, min(1.0, y / (rect_height - 1)))
             
             saturation = u
             brightness = 1.0 - v
-            gray = Color(rgb=(brightness, brightness, brightness))
-            pure_color = self.base_color.multiply_value(brightness)
             
-            return gray.interpolate(pure_color, saturation)
+            # 优化颜色计算：避免创建临时对象
+            base_r, base_g, base_b = self.base_color.rgb
+            
+            # 直接计算插值结果，避免中间对象创建
+            gray_component = brightness * (1.0 - saturation)
+            color_component = brightness * saturation
+            
+            r = gray_component + base_r * color_component
+            g = gray_component + base_g * color_component  
+            b = gray_component + base_b * color_component
+            
+            return Color(rgb=(r, g, b))
             
         def precompute_rect_colors(self):
-            """预计算"""
+            """预计算矩形颜色 - 优化版本"""
             if self.rect_colors_cache is not None and self.cache_base_color == self.base_color:
                 return self.rect_colors_cache
                 
             colors = {}
-            for x in range(0, self.rect_width, self.rect_step):
-                for y in range(0, self.rect_height, self.rect_step):
-                    colors[(x, y)] = self.get_rect_color_at_position(x, y)
+            step = self.rect_step
+            width = self.rect_width
+            height = self.rect_height
+            
+            # 预计算基础颜色分量
+            base_r, base_g, base_b = self.base_color.rgb
+            
+            # 优化循环结构，减少函数调用
+            for x in range(0, width, step):
+                # 预计算u值
+                if width <= 1:
+                    u = 0.0
+                else:
+                    u = max(0.0, min(1.0, x / (width - 1)))
+                    
+                saturation = u
+                
+                for y in range(0, height, step):
+                    # 预计算v值
+                    if height <= 1:
+                        v = 0.0
+                    else:
+                        v = max(0.0, min(1.0, y / (height - 1)))
+                        
+                    brightness = 1.0 - v
+                    
+                    # 直接计算颜色分量，避免函数调用
+                    gray_component = brightness * (1.0 - saturation)
+                    color_component = brightness * saturation
+                    
+                    r = gray_component + base_r * color_component
+                    g = gray_component + base_g * color_component
+                    b = gray_component + base_b * color_component
+                    
+                    colors[(x, y)] = Color(rgb=(r, g, b))
             
             self.rect_colors_cache = colors
             self.cache_base_color = self.base_color
@@ -168,9 +226,11 @@ init python:
                 self.slider_rel_y * self.rect_height
             )
             # 渲染圆环滑块
-            # 这里可以调圆快和圆环的相对位置
-            ring_slider_x = self.actual_x + self.center_x + (self.slider_radius+5) * math.cos(self.angle)
-            ring_slider_y = self.actual_y + self.center_y + (self.slider_radius) * math.sin(self.angle)
+            # 预计算三角函数值
+            cos_angle = math.cos(self.angle)
+            sin_angle = math.sin(self.angle)
+            ring_slider_x = self.actual_x + self.center_x + (self.slider_radius+5) * cos_angle
+            ring_slider_y = self.actual_y + self.center_y + (self.slider_radius) * sin_angle
             self._render_ring_slider(render, ring_slider_x, ring_slider_y, 
                             int(min(self.width, self.height) * 0.15 * self.color_picker_zoom),
                             width, height, st, at)
@@ -239,11 +299,14 @@ init python:
             return None
             
         def _is_in_ring(self, x, y):
-            """检查是否在圆环内"""
+            """检查是否在圆环内 - 优化版本"""
             dx = x - self.center_x
             dy = y - self.center_y
-            distance = math.sqrt(dx*dx + dy*dy)
-            return self.inner_radius <= distance <= self.outer_radius
+            # 使用平方距离避免开方运算
+            distance_sq = dx*dx + dy*dy
+            inner_sq = self.inner_radius * self.inner_radius
+            outer_sq = self.outer_radius * self.outer_radius
+            return inner_sq <= distance_sq <= outer_sq
             
         def _is_in_rect(self, x, y):
             """检查是否在矩形内"""
@@ -257,7 +320,7 @@ init python:
             dy = local_y - self.center_y
             angle = math.atan2(dy, dx)
             if angle < 0:
-                angle += 2 * math.pi
+                angle += self._two_pi
                 
             if ev.type == pygame.MOUSEBUTTONDOWN and ev.button == 1:
                 self.angle = angle
@@ -295,7 +358,7 @@ init python:
             return self.final_color.hexcode
 
 default color_picker_width = 800  # 分辨率设置 一般情况不建议大于850
-default color_picker_height = 800 
+default color_picker_height = color_picker_width 
 default color_picker_zoom = 0.8  # 大小设置
 default color_picker_step = 5  # 精度控制，一般情况不建议小于5
 

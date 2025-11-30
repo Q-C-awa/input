@@ -1,60 +1,7 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-label start:
-    show weihua
-    menu:
-        "相册权限测试":
-            jump permission_test
-        "退出":
-            call screen quit_screen_qc
-        "sejai":
-            jump sehuan
-
 screen quit_screen_qc:
     timer 0.1 action Quit(False)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 image csauchas = "cg/CG6_3.jpg"

@@ -1,247 +1,222 @@
 init python:
-    if renpy.android:
-        from jnius import autoclass
-        from android import activity
-        import os
-        import time
-        
-        class StorageManager:
-            def __init__(self):
-                try:
-                    self.PythonActivity = autoclass('org.renpy.android.PythonSDLActivity')
-                    self.mActivity = self.PythonActivity.mActivity
-                    self.Environment = autoclass('android.os.Environment')
-                    self.Intent = autoclass('android.content.Intent')
-                    self.Uri = autoclass('android.net.Uri')
-                except Exception as e:
-                    renpy.notify(f"存储管理器初始化失败: {e}")
-                    renpy.pause(0.5)
-            
-            def has_all_files_access_permission(self):
-                """检查是否拥有所有文件访问权限"""
-                try:
-                    return self.mActivity.hasAllFilesAccessPermission()
-                except Exception as e:
-                    renpy.notify(f"检查所有文件访问权限失败: {e}")
-                    renpy.pause(0.5)
-                    return False
-            
-            def request_all_files_access_permission(self):
-                """请求所有文件访问权限"""
-                try:
-                    self.mActivity.requestAllFilesAccessPermission()
-                    return True
-                except Exception as e:
-                    renpy.notify(f"请求所有文件访问权限失败: {e}")
-                    renpy.pause(0.5)
-                    return False
-            
-            def get_storage_status(self):
-                """获取存储权限状态"""
-                try:
-                    if self.has_all_files_access_permission():
-                        return "拥有所有文件访问权限"
-                    else:
-                        return "无所有文件访问权限"
-                except:
-                    return "无法检测存储权限状态"
-        
-        class GalleryManager:
-            def __init__(self):
-                try:
-                    self.PythonActivity = autoclass('org.renpy.android.PythonSDLActivity')
-                    self.mActivity = self.PythonActivity.mActivity
-                    self.selected_photo_path = None
-                    activity.bind(on_activity_result=self.on_activity_result)
-                    self.storage_manager = StorageManager()
-                except Exception as e:
-                    renpy.notify(f"相册管理器初始化失败: {e}")
-                    renpy.pause(0.5)
-            
-            def pick_photo(self):
-                """从相册选择照片"""
-                try:
-                    # 检查权限
-                    if not self.has_required_permissions():
-                        renpy.notify("需要存储权限才能访问相册")
-                        renpy.pause(0.5)
-                        return False
-                    
-                    self.mActivity.openGallery()
-                    return True
-                except Exception as e:
-                    renpy.notify(f"打开相册失败: {e}")
-                    renpy.pause(0.5)
-                    return False
-            
-            def has_required_permissions(self):
-                """检查所需权限"""
-                try:
-                    # 检查基本存储权限
-                    read_storage = renpy.check_permission("android.permission.READ_EXTERNAL_STORAGE")
-                    write_storage = renpy.check_permission("android.permission.WRITE_EXTERNAL_STORAGE")
-                    
-                    # 检查所有文件访问权限
-                    all_files_access = self.storage_manager.has_all_files_access_permission()
-                    
-                    return read_storage and write_storage and all_files_access
-                except Exception as e:
-                    renpy.notify(f"检查权限失败: {e}")
-                    renpy.pause(0.5)
-                    return False
-            
-            def request_required_permissions(self):
-                """请求所需权限"""
-                try:
-                    # 请求基本存储权限
-                    renpy.request_permission("android.permission.READ_EXTERNAL_STORAGE")
-                    renpy.request_permission("android.permission.WRITE_EXTERNAL_STORAGE")
-                    
-                    # 请求所有文件访问权限
-                    if not self.storage_manager.has_all_files_access_permission():
-                        self.storage_manager.request_all_files_access_permission()
-                        return "正在请求所有文件访问权限..."
-                    
-                    return "所有权限已获取"
-                except Exception as e:
-                    return f"请求权限失败: {e}"
-            
-            def on_activity_result(self, requestCode, resultCode, data):
-                """处理相册选择结果"""
-                RESULT_OK = -1
-                if resultCode == RESULT_OK and requestCode == 1001:
-                    if data and data.getData():
-                        uri = data.getData()
-                        self.selected_photo_path = self.mActivity.getPathFromUri(uri)
-                        if self.selected_photo_path:
-                            renpy.notify("选择成功: " + self.selected_photo_path)
-                            renpy.pause(0.5)
-                            return True
-                renpy.notify("未选择照片")
-                renpy.pause(0.5)
-                return False
-            
-            def get_selected_photo(self):
-                return self.selected_photo_path
-            
-            def has_photo(self):
-                return self.selected_photo_path and os.path.exists(self.selected_photo_path)
-            
-            def clear_selection(self):
-                self.selected_photo_path = None
-        
-        try:
-            gallery_manager = GalleryManager()
-            storage_manager = StorageManager()
-        except:
-            gallery_manager = None
-            storage_manager = None
-    else:
-        gallery_manager = None
-        storage_manager = None
-
-init python:
-    def show_photo():
-        if not gallery_manager or not gallery_manager.has_photo():
-            renpy.notify("没有可显示的照片")
-            renpy.pause(0.5)
-            return
-        photo_path = gallery_manager.get_selected_photo()
-        renpy.show_screen("photo_viewer", photo_path)
-
-screen photo_viewer(photo_path):
-    modal True
-    zorder 200
-    add "#000000AA"
+    import os
+    import time
     
-    frame:
-        background Solid("#FFFFFF")
-        xalign 0.5
-        yalign 0.5
-        padding (20, 20, 20, 20)
+    class GalleryPhoto:
+        def __init__(self):
+            self.selected_image = None
+            self.permissions_granted = False
         
-        vbox:
-            spacing 20
-            
-            label "照片预览"
-            
-            if photo_path and os.path.exists(photo_path):
-                add photo_path:
-                    fit "contain"
-            else:
-                text "无法显示照片" color "#FF0000"
-            
-            text "文件路径: [photo_path]" size 16 color "#666666"
-            
-            textbutton "关闭" action Hide("photo_viewer")
-
-screen storage_permission_screen():
-    tag menu
-    
-    vbox:
-        spacing 20
-        align (0.5, 0.5)
-        
-        label "存储权限管理"
-        
-        if storage_manager:
-            $ storage_status = storage_manager.get_storage_status()
-            text "存储权限状态: [storage_status]" xalign 0.5
-            
-            vbox:
-                spacing 10
-                xalign 0.5
+        def request_all_permissions(self):
+            """请求所有需要的权限"""
+            if not renpy.android:
+                return True
                 
-                textbutton "检查权限状态" action Function(renpy.notify, storage_status)
-                textbutton "请求所有文件访问权限" action Function(storage_manager.request_all_files_access_permission)
-                textbutton "请求基础存储权限" action Function(
-                    lambda: [
-                        renpy.request_permission("android.permission.READ_EXTERNAL_STORAGE"),
-                        renpy.request_permission("android.permission.WRITE_EXTERNAL_STORAGE")
-                    ]
-                )
+            permissions_granted = True
+            for permission in build.android_permissions:
+                if not renpy.check_permission(permission):
+                    result = renpy.request_permission(permission)
+                    if not result:
+                        permissions_granted = False
+            
+            self.permissions_granted = permissions_granted
+            return permissions_granted
         
-        else:
-            text "存储管理器不可用" color "#FF0000" xalign 0.5
+        def check_all_permissions(self):
+            """检查所有权限状态"""
+            if not renpy.android:
+                return True
+                
+            for permission in build.android_permissions:
+                if not renpy.check_permission(permission):
+                    return False
+            return True
         
-        textbutton "返回" action Return() xalign 0.5
+        def open_gallery(self):
+            """使用SDL打开相册选择图片"""
+            if not renpy.android:
+                return False
+                
+            try:
+                # 使用SDL的Android Activity打开相册
+                activity = renpy.android.get_activity()
+                if activity:
+                    # 清除之前的图片选择
+                    activity.clearSelectedImage()
+                    # 打开相册
+                    activity.openGallery()
+                    return True
+                return False
+            except Exception as e:
+                renpy.notify(f"打开相册失败: {e}")
+                return False
+        
+        def get_selected_image(self):
+            """获取选择的图片路径"""
+            if not renpy.android:
+                return self.selected_image
+                
+            try:
+                # 从SDL Activity获取选择的图片路径
+                activity = renpy.android.get_activity()
+                if activity:
+                    path = activity.getSelectedImagePath()
+                    if path and path != "":
+                        self.selected_image = path
+                return self.selected_image
+            except Exception as e:
+                renpy.notify(f"获取图片路径失败: {e}")
+                return self.selected_image
+        
+        def copy_image_to_internal(self, source_path):
+            """将图片复制到内部存储以便Ren'Py使用"""
+            try:
+                import shutil
+                # 获取内部存储路径
+                internal_dir = renpy.config.gamedir
+                dest_dir = os.path.join(internal_dir, "user_images")
+                os.makedirs(dest_dir, exist_ok=True)
+                
+                # 生成唯一文件名
+                filename = "selected_image_" + str(int(time.time())) + os.path.splitext(source_path)[1]
+                dest_path = os.path.join(dest_dir, filename)
+                
+                # 复制文件
+                shutil.copy2(source_path, dest_path)
+                return dest_path
+            except Exception as e:
+                renpy.notify(f"复制图片失败: {e}")
+                return source_path
+        
+        def wait_for_image_selection(self, timeout=30):
+            """等待图片选择完成"""
+            if not renpy.android:
+                return False
+                
+            start_time = time.time()
+            while time.time() - start_time < timeout:
+                # 检查是否有图片被选择
+                if self.get_selected_image():
+                    return True
+                # 等待一段时间再检查
+                renpy.pause(0.5)
+            
+            return False
+    
+    # 创建全局实例
+    gallery = GalleryPhoto()
 
-label permission_test:
-    "权限调用测试"
+# 相册测试流程
+label gallery_test:
+    "正在初始化相册功能..."
     
-    "正在检查权限状态..."
-    
-    if gallery_manager:
-        $ has_permissions = gallery_manager.has_required_permissions()
-        if has_permissions:
-            "所有必要权限已获取"
-        else:
-            "需要请求权限"
-            $ gallery_manager.request_required_permissions()
-            "请按照系统提示授权..."
+    # 检查权限
+    if gallery.check_all_permissions():
+        "权限检查通过"
+        jump open_gallery
     else:
-        "相册管理器不可用"
+        "需要请求权限"
+        jump request_permissions
+
+label request_permissions:
+    "正在请求必要的权限..."
     
-    "功能测试"
+    $ success = gallery.request_all_permissions()
+    
+    if success:
+        "权限请求已发送"
+        # 等待用户响应
+        $ renpy.pause(2.0)
+        
+        # 再次检查权限
+        if gallery.check_all_permissions():
+            "权限已授予"
+            jump open_gallery
+        else:
+            "部分权限未被授予"
+            jump permission_failed
+    else:
+        "权限请求失败"
+        jump permission_failed
+
+label permission_failed:
+    "权限获取失败，可能无法使用完整功能"
+    
     menu:
-        "从相册选择照片":
-            if gallery_manager and gallery_manager.pick_photo():
-                "请在相册中选择一张照片..."
-            else:
-                "无法打开相册"
-        
-        "查看已选照片":
-            if gallery_manager and gallery_manager.has_photo():
-                $ show_photo()
-            else:
-                "没有选择的照片"
-        
-        "存储权限管理":
-            call screen storage_permission_screen
-        
+        "继续尝试（可能无法使用完整功能）":
+            jump open_gallery
         "返回":
             return
+
+label open_gallery:
+    "正在打开相册..."
     
-    jump permission_test
+    $ success = gallery.open_gallery()
+    
+    if not success:
+        "无法打开相册"
+        return
+    
+    "请在相册中选择一张图片..."
+    
+    # 等待图片选择
+    $ selection_success = gallery.wait_for_image_selection()
+    
+    if selection_success:
+        jump image_selected
+    else:
+        "选择超时或用户取消了选择"
+        return
 
+# 图片选择成功标签
+label image_selected:
+    $ selected_path = gallery.get_selected_image()
+    
+    if not selected_path:
+        "没有选择图片"
+        return
+    
+    "图片选择成功！"
+    "文件路径: [selected_path]"
+    
+    # 尝试将图片复制到内部存储
+    $ internal_path = gallery.copy_image_to_internal(selected_path)
+    
+    # 在Ren'Py中显示图片
+    python:
+        try:
+            # 将图片添加到Ren'Py的图像库
+            renpy.image("selected_image", internal_path)
+            renpy.notify("图片已加载成功！")
+            load_success = True
+        except Exception as e:
+            renpy.notify("加载图片时出错: " + str(e))
+            load_success = False
+    
+    if not load_success:
+        "图片加载失败，请重新选择"
+        return
+    
+    scene black
+    show selected_image at truecenter with dissolve
+    "这是您选择的图片！"
+    
+    menu:
+        "使用此图片作为背景":
+            $ persistent.selected_background = internal_path
+            "图片已设置为背景！"
+            jump show_background
+            
+        "重新选择图片":
+            jump gallery_test
 
+# 显示背景标签
+label show_background:
+    if persistent.selected_background:
+        scene expression persistent.selected_background
+    else:
+        scene black
+    
+    "这个场景使用了您选择的图片作为背景"
+    "测试完成！"
+    return
