@@ -90,9 +90,20 @@ screen main_menu():
     ## 此空框可使标题菜单变暗。
     frame:
         style "main_menu_frame"
+    vbox:
+        style_prefix "navigation"
 
-    ## use 语句将其他的屏幕包含进此屏幕。标题屏幕的实际内容在导航屏幕中。
-    use navigation
+        xpos gui.navigation_xpos
+        yalign 0.5
+
+        spacing gui.navigation_spacing
+
+        textbutton _("开始游戏") action Start()
+        textbutton _("读取游戏") action ShowMenu("load")
+        textbutton _("设置") action ShowMenu("preferences")
+        textbutton _("关于") action ShowMenu("about")
+        textbutton _("帮助") action ShowMenu("help")
+        textbutton _("退出") action Quit(confirm=not main_menu)
 
     if gui.show_name:
 

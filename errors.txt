@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/sehuan.rpy", line 171: invalid syntax
-            ring_slider_x = self.actual_x + self.center_x + (self.slider_radius+) * math.cos(self.angle)
-                                                                                 ^
+The label splashscreen is defined twice, at File "game/script.rpy", line 92:
+label splashscreen:
+and File "game/start.rpy", line 18:
+label splashscreen:
+
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Fri Nov 21 19:09:15 2025
+Fri Dec  5 19:03:42 2025

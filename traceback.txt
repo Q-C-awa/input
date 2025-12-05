@@ -1,48 +1,31 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 18, in script call
-    menu:
-  File "renpy/common/00console.rpy", line 1177, in script call
-    python in _console:
+  File "renpy/common/00start.rpy", line 244, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/start.rpy", line 17, in script
+    call screen dow_ys
   File "renpy/common/000statements.rpy", line 671, in execute_call_screen
     store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 435, in execute
-    screen tinting_tool():
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 435, in execute
-    screen tinting_tool():
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 503, in execute
-    drag:
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 509, in execute
-    frame:
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 512, in execute
-    has vbox
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 517, in execute
-    frame:
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 520, in execute
-    has hbox
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 522, in execute
-    frame:
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 523, in execute
-    has fixed
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 525, in execute
-    vbar value FieldValue(picker, "hue_rotation", 1.0)
-  File "renpy/common/00barvalues.rpy", line 163, in get_adjustment
-    value = self.get_value()
-  File "renpy/common/00barvalues.rpy", line 246, in get_value
-    value = _get_field(self.object, self.field, self.kind)
-  File "renpy/common/00action_data.rpy", line 36, in _get_field
-    raise Exception("The {!r} {} does not exist.".format(name, kind))
-Exception: The 'hue_rotation' field does not exist.
+  File "game/start.rpy", line 18, in execute
+    screen dow_ys:
+  File "game/start.rpy", line 18, in execute
+    screen dow_ys:
+  File "game/start.rpy", line 23, in execute
+    timer 0.01 action Mainmenu()
+  File "game/start.rpy", line 23, in keywords
+    timer 0.01 action Mainmenu()
+  File "game/start.rpy", line 23, in <module>
+    timer 0.01 action Mainmenu()
+NameError: name 'Mainmenu' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 18, in script call
-    menu:
-  File "renpy/common/00console.rpy", line 1177, in script call
-    python in _console:
-  File "<string>", line 1, in script
+  File "renpy/common/00start.rpy", line 244, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/start.rpy", line 17, in script
+    call screen dow_ys
   File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 1987, in execute
     self.call("execute")
   File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 1966, in call
@@ -73,39 +56,19 @@ Full traceback:
     self.update()
   File "D:\Ren'py\renpy-8.3.7-sdk\renpy\display\screen.py", line 700, in update
     self.screen.function(**self.scope)
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 435, in execute
-    screen tinting_tool():
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 435, in execute
-    screen tinting_tool():
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 503, in execute
-    drag:
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 509, in execute
-    frame:
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 512, in execute
-    has vbox
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 517, in execute
-    frame:
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 520, in execute
-    has hbox
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 522, in execute
-    frame:
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 523, in execute
-    has fixed
-  File "game/colorpicker_itch/image_tint_tool.rpy", line 525, in execute
-    vbar value FieldValue(picker, "hue_rotation", 1.0)
-  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\sl2\sldisplayables.py", line 297, in sl2vbar
-    return renpy.display.behavior.Bar(range, value, width, height, vertical=True, **properties)
-  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\display\behavior.py", line 2253, in __init__
-    adjustment = value.get_adjustment()
-  File "renpy/common/00barvalues.rpy", line 163, in get_adjustment
-    value = self.get_value()
-  File "renpy/common/00barvalues.rpy", line 246, in get_value
-    value = _get_field(self.object, self.field, self.kind)
-  File "renpy/common/00action_data.rpy", line 36, in _get_field
-    raise Exception("The {!r} {} does not exist.".format(name, kind))
-Exception: The 'hue_rotation' field does not exist.
+  File "game/start.rpy", line 18, in execute
+    screen dow_ys:
+  File "game/start.rpy", line 18, in execute
+    screen dow_ys:
+  File "game/start.rpy", line 23, in execute
+    timer 0.01 action Mainmenu()
+  File "game/start.rpy", line 23, in keywords
+    timer 0.01 action Mainmenu()
+  File "game/start.rpy", line 23, in <module>
+    timer 0.01 action Mainmenu()
+NameError: name 'Mainmenu' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.3.7.25031702
 input 1145.1
-Fri Nov 21 18:36:00 2025
+Fri Dec  5 19:06:14 2025
