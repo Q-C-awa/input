@@ -102,7 +102,7 @@ screen main_menu():
         textbutton _("读取游戏") action ShowMenu("load")
         textbutton _("设置") action ShowMenu("preferences")
         textbutton _("关于") action ShowMenu("about")
-        textbutton _("帮助") action ShowMenu("help")
+        textbutton _("列表—2") action ShowMenu("package_qc")
         textbutton _("退出") action Quit(confirm=not main_menu)
 
     if gui.show_name:
