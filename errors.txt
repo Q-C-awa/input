@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/start.rpy", line 21: expected 'image_name_component' not found.
-    show "da_movie_movie"
-         ^
+File "game/screens.rpy", line 16: non-default parameter 'x' follows a default parameter
+    transform random_motion(zoom_de=1.0,x,y):
+                                         ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sat Dec  6 14:33:13 2025
+Sat Dec 13 09:55:40 2025

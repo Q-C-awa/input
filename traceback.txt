@@ -1,37 +1,31 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/options.rpy", line 21, in script
-    define config.web_input = renpy.variant("touch")
-  File "game/options.rpy", line 21, in script
-    define config.web_input = renpy.variant("touch")
-  File "game/options.rpy", line 21, in <module>
-    define config.web_input = renpy.variant("touch")
-AttributeError: module 'renpy' has no attribute 'variant'
+  File "game/start.rpy", line 21, in script
+    $ AndroidNotify(title_text="测试通知", box_text="这是一个来自Ren'Py的安卓通知")
+  File "game/start.rpy", line 21, in <module>
+    $ AndroidNotify(title_text="测试通知", box_text="这是一个来自Ren'Py的安卓通知")
+  File "game/notify.rpy", line 19, in AndroidNotify
+    import jnius
+ModuleNotFoundError: No module named 'jnius.jnius'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\main.py", line 541, in main
-    renpy.game.context().run(node)
-  File "game/options.rpy", line 21, in script
-    define config.web_input = renpy.variant("touch")
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "game/options.rpy", line 21, in script
-    define config.web_input = renpy.variant("touch")
-  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\ast.py", line 2248, in execute
-    self.set()
-  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\ast.py", line 2262, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "D:\Ren'py\teach\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/options.rpy", line 21, in <module>
-    define config.web_input = renpy.variant("touch")
-AttributeError: module 'renpy' has no attribute 'variant'
+  File "game/start.rpy", line 21, in script
+    $ AndroidNotify(title_text="测试通知", box_text="这是一个来自Ren'Py的安卓通知")
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/start.rpy", line 21, in <module>
+    $ AndroidNotify(title_text="测试通知", box_text="这是一个来自Ren'Py的安卓通知")
+  File "game/notify.rpy", line 19, in AndroidNotify
+    import jnius
+  File "lib/python3.9/jnius/__init__.py", line 41, in <module>
+ModuleNotFoundError: No module named 'jnius.jnius'
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.3.7.25031702
 input 1145.1
-Sat Dec  6 16:04:28 2025
+Sat Dec 13 09:33:31 2025

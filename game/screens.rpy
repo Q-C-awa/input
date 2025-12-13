@@ -13,13 +13,12 @@ init python:
         trans.ycenter = 0.4 + 0.005 * math.cos(2 * math.pi * st / 4.0)
         return 0
 
-transform random_motion:
-    align(0.5,0.4)
+transform random_motion(x,y,zoom_de=1.0):
+    align(x,y)
     xoffset 0
     yoffset 0
     rotate 0
-    zoom 1.1
-    shader("Rain")
+    zoom zoom_de
     alpha 0.5
     ease 1.5 alpha 1.0
     block:
@@ -30,9 +29,9 @@ transform random_motion:
                         ease 2.0 xoffset 15
                         ease 2.0 xoffset -15
                     parallel:
-                        ease 1.25 zoom 1.097
-                        ease 1.25 zoom 1.103
-                        ease 1.25 zoom 1.097
+                        ease 1.25 zoom zoom_de-0.003
+                        ease 1.25 zoom zoom_de+0.003
+                        ease 1.25 zoom zoom_de-0.003
                     parallel:
                         ease 1.5 yoffset 16
                         ease 1.5 yoffset -16
@@ -44,9 +43,9 @@ transform random_motion:
                         ease 1.5 xoffset 15
                         ease 1.5 xoffset -15
                     parallel:
-                        ease 1.25 zoom 1.097
-                        ease 1.25 zoom 1.103
-                        ease 1.25 zoom 1.097
+                        ease 1.25 zoom zoom_de-0.003
+                        ease 1.25 zoom zoom_de+0.003
+                        ease 1.25 zoom zoom_de-0.003
                     parallel:
                         ease 3.0 rotate -0.5
                         ease 3.0 rotate 0.5
@@ -62,8 +61,8 @@ transform random_motion:
                     parallel:
                         function elliptical_movement_x
                     parallel:
-                        ease 1.25 zoom 1.105
-                        ease 1.25 zoom 1.095
+                        ease 1.25 zoom zoom_de+0.005
+                        ease 1.25 zoom zoom_de-0.005
                     parallel:
                         ease 2.0 rotate -0.5
                         ease 2.0 rotate 0.5
@@ -73,8 +72,8 @@ transform random_motion:
                     parallel:
                         function elliptical_movement_x
                     parallel:
-                        ease 1.25 zoom 1.105
-                        ease 1.25 zoom 1.095
+                        ease 1.25 zoom zoom_de+0.005
+                        ease 1.25 zoom zoom_de-0.005
                     parallel:
                         ease 2.0 rotate -0.5
                         ease 2.0 rotate 0.5
@@ -86,7 +85,9 @@ screen main_menu():
     ## 此语句可确保替换掉任何其他菜单屏幕。
     tag menu
 
-    use ad_screen
+    add "baihua":
+        zoom 0.4
+        at truecenter
     ## 此空框可使标题菜单变暗。
     frame:
         style "main_menu_frame"
