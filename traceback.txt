@@ -1,31 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/start.rpy", line 21, in script
-    $ AndroidNotify(title_text="测试通知", box_text="这是一个来自Ren'Py的安卓通知")
-  File "game/start.rpy", line 21, in <module>
-    $ AndroidNotify(title_text="测试通知", box_text="这是一个来自Ren'Py的安卓通知")
-  File "game/notify.rpy", line 19, in AndroidNotify
-    import jnius
-ModuleNotFoundError: No module named 'jnius.jnius'
+  File "game/start.rpy", line 37, in script
+    nvfe "是雪融玲兰的香气，对吧？"
+  File "game/start.rpy", line 8, in nvfe_sound_machine
+    renpy.voice.play("audio/O1.ogg", loop=True, channel="Typewriter_channel")
+AttributeError: module 'renpy.exports' has no attribute 'voice'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/start.rpy", line 21, in script
-    $ AndroidNotify(title_text="测试通知", box_text="这是一个来自Ren'Py的安卓通知")
-  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/start.rpy", line 21, in <module>
-    $ AndroidNotify(title_text="测试通知", box_text="这是一个来自Ren'Py的安卓通知")
-  File "game/notify.rpy", line 19, in AndroidNotify
-    import jnius
-  File "lib/python3.9/jnius/__init__.py", line 41, in <module>
-ModuleNotFoundError: No module named 'jnius.jnius'
+  File "game/start.rpy", line 37, in script
+    nvfe "是雪融玲兰的香气，对吧？"
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\ast.py", line 623, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\character.py", line 1471, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\character.py", line 1117, in do_display
+    display_say(who,
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\character.py", line 627, in display_say
+    callback("begin")
+  File "D:\Ren'py\renpy-8.3.7-sdk\renpy\character.py", line 91, in __call__
+    c(*args, **kwargs)
+  File "game/start.rpy", line 8, in nvfe_sound_machine
+    renpy.voice.play("audio/O1.ogg", loop=True, channel="Typewriter_channel")
+AttributeError: module 'renpy.exports' has no attribute 'voice'
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.3.7.25031702
 input 1145.1
-Sat Dec 13 09:33:31 2025
+Sat Dec 20 10:50:15 2025

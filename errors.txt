@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 16: non-default parameter 'x' follows a default parameter
-    transform random_motion(zoom_de=1.0,x,y):
-                                         ^
+File "game/screens.rpy", line 862: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sat Dec 13 09:55:40 2025
+Sat Dec 20 10:22:22 2025

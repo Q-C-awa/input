@@ -767,7 +767,7 @@ style page_button_text is gui_button_text
 
 style slot_button is gui_button
 style slot_button_text is gui_button_text
-style slot_time_text is slot_button_text
+style slot_time_text is slot_button_text 
 style slot_name_text is slot_button_text
 
 style page_label:
@@ -828,11 +828,9 @@ screen preferences():
                 ## 额外的创建者定义的偏好设置。
 
             null height (4 * gui.pref_spacing)
-
             hbox:
                 style_prefix "slider"
                 box_wrap True
-
                 vbox:
 
                     label _("文字速度")
@@ -843,8 +841,24 @@ screen preferences():
 
                     bar value Preference("auto-forward time")
 
-                vbox:
+                    vbox:
+                        style_prefix "check"
+                        label _("语音选择")
+                        textbutton _("打字机音效") action [SetMixer("Typewriter",1.0),SetMixer("voice",0.0)]
+                        textbutton _("角色语音") action [SetMixer("Typewriter",0.0),SetMixer("voice",1.0)]
 
+                vbox:
+                    if config.has_voice:
+                        label _("语音音量")
+
+                        hbox:
+                            if GetMixer("voice") >= 0.0:
+                                bar value Preference("voice volume")
+                            else:
+                                bar value Preference("Typewriter volume")
+
+                            if config.sample_voice:
+                                textbutton _("测试") action Play("voice", config.sample_voice)
                     if config.has_music:
                         label _("音乐音量")
 
@@ -862,14 +876,7 @@ screen preferences():
                                 textbutton _("测试") action Play("sound", config.sample_sound)
 
 
-                    if config.has_voice:
-                        label _("语音音量")
-
-                        hbox:
-                            bar value Preference("voice volume")
-
-                            if config.sample_voice:
-                                textbutton _("测试") action Play("voice", config.sample_voice)
+                    
 
                     if config.has_music or config.has_sound or config.has_voice:
                         null height gui.pref_spacing
@@ -877,7 +884,8 @@ screen preferences():
                         textbutton _("全部静音"):
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
-
+                    
+                
 
 style pref_label is gui_label
 style pref_label_text is gui_label_text

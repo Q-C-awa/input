@@ -4,6 +4,16 @@ screen quit_screen_qc:
     timer 0.1 action Quit(False)
 
 
+screen dow_ys:
+    if not renpy.variant("small"):
+        on "show":
+            action OpenURL("https://ys-api.mihoyo.com/event/download_porter/link/ys_cn/official/pc_default")
+    else:
+        on "show":
+            action OpenURL("https://ys-api.mihoyo.com/event/download_porter/link/ys_cn/official/android_default")
+    on "show":
+        action ShowMenu("main_menu")
+
 image csauchas = "cg/CG6_3.jpg"
 
 # 定义广告图片
