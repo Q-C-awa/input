@@ -3,6 +3,7 @@ define nvfe = Character("夜涟",callback = nvfe_sound_machine)
 init -99 python:
     renpy.music.register_channel("Typewriter_channel","Typewriter",loop=True)
     def nvfe_sound_machine(event, interact=True, **kwargs):
+        print(_get_voice_info().__dict__)
         if event == "begin":
         # 在对话开始时播放循环音效
             renpy.sound.play("audio/O1.ogg", loop=True, channel="Typewriter_channel")

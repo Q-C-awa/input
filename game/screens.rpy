@@ -104,6 +104,8 @@ screen main_menu():
         textbutton _("设置") action ShowMenu("preferences")
         textbutton _("关于") action ShowMenu("about")
         textbutton _("列表—2") action ShowMenu("package_qc")
+        textbutton _("立绘鉴赏") action ShowMenu("Character_Art_Appreciation")
+        textbutton _("语音鉴赏") action ShowMenu("voice_gallery")
         textbutton _("退出") action Quit(confirm=not main_menu)
 
     if gui.show_name:
@@ -656,108 +658,6 @@ style about_label_text:
 ## https://doc.renpy.cn/zh-CN/screen_special.html#save https://doc.renpy.cn/zh-
 ## CN/screen_special.html#load
 
-screen save():
-
-    tag menu
-
-    use file_slots(_("保存"))
-
-
-screen load():
-
-    tag menu
-
-    use file_slots(_("读取游戏"))
-
-
-screen file_slots(title):
-
-    default page_name_value = FilePageNameInputValue(pattern=_("第 {} 页"), auto=_("自动存档"), quick=_("快速存档"))
-
-    use game_menu(title):
-
-        fixed:
-
-            ## 此代码确保输入控件在任意按钮执行前可以获取 enter 事件。
-            order_reverse True
-
-            ## 页面名称，可以通过单击按钮进行编辑。
-            button:
-                style "page_label"
-
-                key_events True
-                xalign 0.5
-                action page_name_value.Toggle()
-
-                input:
-                    style "page_label_text"
-                    value page_name_value
-
-            ## 存档位网格。
-            grid gui.file_slot_cols gui.file_slot_rows:
-                style_prefix "slot"
-
-                xalign 0.5
-                yalign 0.5
-
-                spacing gui.slot_spacing
-
-                for i in range(gui.file_slot_cols * gui.file_slot_rows):
-
-                    $ slot = i + 1
-
-                    button:
-                        action FileAction(slot)
-
-                        has vbox
-
-                        add FileScreenshot(slot) xalign 0.5
-
-                        text FileTime(slot, format=_("{#file_time}%Y-%m-%d %H:%M"), empty=_("空存档位")):
-                            style "slot_time_text"
-
-                        text FileSaveName(slot):
-                            style "slot_name_text"
-
-                        key "save_delete" action FileDelete(slot)
-
-            ## 用于访问其他页面的按钮。
-            vbox:
-                style_prefix "page"
-
-                xalign 0.5
-                yalign 1.0
-
-                hbox:
-                    xalign 0.5
-
-                    spacing gui.page_spacing
-
-                    textbutton _("<") action FilePagePrevious()
-                    key "save_page_prev" action FilePagePrevious()
-
-                    if config.has_autosave:
-                        textbutton _("{#auto_page}A") action FilePage("auto")
-
-                    if config.has_quicksave:
-                        textbutton _("{#quick_page}Q") action FilePage("quick")
-
-                    ## range(1, 10) 给出 1 到 9 之间的数字。
-                    for page in range(1, 10):
-                        textbutton "[page]" action FilePage(page)
-
-                    textbutton _(">") action FilePageNext()
-                    key "save_page_next" action FilePageNext()
-
-                if config.has_sync:
-                    if CurrentScreenName() == "save":
-                        textbutton _("上传同步"):
-                            action UploadSync()
-                            xalign 0.5
-                    else:
-                        textbutton _("下载同步"):
-                            action DownloadSync()
-                            xalign 0.5
 
 
 style page_label is gui_label
@@ -965,42 +865,7 @@ style slider_vbox:
 ##
 ## https://doc.renpy.cn/zh-CN/history.html
 
-screen history():
 
-    tag menu
-
-    ## 避免预缓存此屏幕，因为它可能非常大。
-    predict False
-
-    use game_menu(_("历史"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0, spacing=gui.history_spacing):
-
-        style_prefix "history"
-
-        for h in _history_list:
-
-            window:
-
-                ## 此代码可确保如果 history_height 为 None 时仍可正常显示条目。
-                has fixed:
-                    yfit True
-
-                if h.who:
-
-                    label h.who:
-                        style "history_name"
-                        substitute False
-
-                        ## 从 Character 对象中获取叙述角色的文字颜色，如果设置了
-                        ## 的话。
-                        if "color" in h.who_args:
-                            text_color h.who_args["color"]
-
-                $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
-                text what:
-                    substitute False
-
-        if not _history_list:
-            label _("尚无对话历史记录。")
 
 
 ## 此代码决定了允许在历史记录屏幕上显示哪些标签。
