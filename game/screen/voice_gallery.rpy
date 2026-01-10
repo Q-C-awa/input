@@ -11,7 +11,7 @@ init -99 python:
                 return {}
         else:
             with open(voice_data_json,'w',encoding='utf-8') as f:
-                json.dump({},f,ensure_ascii=False,indent=4)
+                json.dump({},f,ensure_ascii=False,indent=2)
             return {}
     def get_voice_data(name):
         data=load_json()
@@ -25,7 +25,7 @@ init -99 python:
         data=load_json()
         data[name]=voice_file
         with open(voice_data_json,'w',encoding='utf-8') as f:
-            json.dump(data,f,ensure_ascii=False,indent=4)
+            json.dump(data,f,ensure_ascii=False,indent=2)
 screen voice_gallery(voice_file=None):
     tag menu
     add "bg"

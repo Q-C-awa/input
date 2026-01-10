@@ -33,9 +33,6 @@ screen file_slots(title):
                     button:
                         action [SetVariable("save_name", display_text),FileAction(slot)]
                         vbox:
-                            python:
-                                n=n+1
-                                # print(save_name,f"执行了{n}次")
                             add FileScreenshot(slot) xalign 0.5
                             text FileTime(slot, format=_("{#file_time}%Y-%m-%d %H:%M"), empty=_("空存档位")):
                                 style "slot_time_text"

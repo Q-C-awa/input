@@ -29,6 +29,8 @@ label start:
             call screen dow_ys
         "多语言测试":
             jump multi_language_test
+        "相册调用测试":
+            jump album_test
         "退出":
             call screen quit_screen_qc
 label multi_language_test:
