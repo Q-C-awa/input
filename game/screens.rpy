@@ -78,16 +78,24 @@ transform random_motion(x,y,zoom_de=1.0):
                         ease 2.0 rotate -0.5
                         ease 2.0 rotate 0.5
                 repeat
-            
+
+image testimage:
+    "baihua"
+    zoom 0.5
+    yalign 1.0
+    xalign 0.0
+    linear 1.0 xalign 1.0 
+transform testtrans:
+    "testimage"
 
 screen main_menu():
 
     ## 此语句可确保替换掉任何其他菜单屏幕。
     tag menu
 
-    add "baihua":
+    add Solid("#fff"):
         zoom 0.4
-        at truecenter
+        at testtrans
     ## 此空框可使标题菜单变暗。
     frame:
         style "main_menu_frame"
