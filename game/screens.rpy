@@ -82,9 +82,10 @@ transform random_motion(x,y,zoom_de=1.0):
 image testimage:
     "baihua"
     zoom 0.5
-    yalign 1.0
+    yalign 0.5
     xalign 0.0
-    linear 1.0 xalign 1.0 
+    alpha 0.5
+    ease 1.5 xalign 1.0 alpha 1.0
 transform testtrans:
     "testimage"
 
@@ -213,9 +214,41 @@ style frame:
 ## 示。它还可以创建 id 为 who 和 id 为 window 的可视控件来应用样式属性。
 ##
 ## https://doc.renpy.cn/zh-CN/screen_special.html#say
+screen quick_menu():
 
+    ## 确保该菜单出现在其他屏幕之上，
+    zorder 100
+    if quick_menu:
+        hbox:
+            style_prefix "quick"
+            xalign 0.5
+            yalign 1.0
+            textbutton _("回退") action Rollback()
+            textbutton _("历史") action ShowMenu('history')
+            textbutton _("快进") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("自动") action Preference("auto-forward", "toggle")
+            textbutton _("保存") action ShowMenu('save')
+            textbutton _("快存") action QuickSave()
+            textbutton _("快读") action QuickLoad()
+            textbutton _("设置") action ShowMenu('preferences')
+            textbutton _("菜单") action Show('menu_qc')
+# default hide_qc = False
+screen menu_qc():
+    """menu_qc"""
+    $ print(renpy.get_screen_docstring("menu_qc"))
+    modal True
+    frame at truecenter:
+        xysize(100,200)
+        vbox:
+            spacing 20
+            textbutton _("返回") action Return()
+            # textbutton _("隐藏") action [SetVariable("hide_qc",True),Return()]
+            textbutton _("隐藏") action [Hide("menu_qc"), HideInterface()]
+            
+        
 screen say(who, what):
-
+    # if hide_qc:
+    #     timer 0.01 action [SetVariable("hide_qc",False),HideInterface()]
     window:
         id "window"
 
@@ -350,27 +383,7 @@ style choice_button_text is default:
 ##
 ## 快捷菜单显示于游戏内，以便于访问游戏外的菜单。
 
-screen quick_menu():
 
-    ## 确保该菜单出现在其他屏幕之上，
-    zorder 100
-
-    if quick_menu:
-
-        hbox:
-            style_prefix "quick"
-
-            xalign 0.5
-            yalign 1.0
-
-            textbutton _("回退") action Rollback()
-            textbutton _("历史") action ShowMenu('history')
-            textbutton _("快进") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("自动") action Preference("auto-forward", "toggle")
-            textbutton _("保存") action ShowMenu('save')
-            textbutton _("快存") action QuickSave()
-            textbutton _("快读") action QuickLoad()
-            textbutton _("设置") action ShowMenu('preferences')
 
 
 ## 此代码确保只要用户没有主动隐藏界面，就会在游戏中显示 quick_menu 屏幕。

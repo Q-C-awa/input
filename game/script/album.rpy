@@ -4,52 +4,61 @@ define build.android_permissions = [
     "android.permission.READ_MEDIA_IMAGES", # 读取媒体权限
     "android.permission.READ_MEDIA_VIDEO"
 ]
-init python:
+init -999 python:
     
     # 导入jnius
-    class AlbumManager(object):
-        try:
-            import os
-            import shutil
-            from jnius import autoclass     
-            def __init__(self):
+    if renpy.android:
+        from jnius import autoclass
+        import os
+        import shutil
+        # 标记是否为安卓环境
+        is_android = True
+    else:
+        is_android = False
+
+    class AlbumManager(object):    
+        def __init__(self):
+            if not is_android:
+                renpy.notify("当前不是 Android 平台，无法调用相册")
+                self.activity = None
+                return
+            try:
                 self.PythonSDLActivity = autoclass('org.renpy.android.PythonSDLActivity')
-                # 获取PythonSDLActivity类
                 self.activity = self.PythonSDLActivity.mActivity
-                # 获取活动
                 self.last_saved_filename = ""
-            def open_gallery(self):
-                # 调用java中的openSystemAlbum
-                self.activity.openSystemAlbum()
-            def fetch_and_copy_image(self):
-                # 调用java中的getPickedPath 
-                source_path = self.activity.getPickedPath()
-                renpy.notify(f"Picked image path: {source_path}")
+            except Exception as e:
+                renpy.notify(f"初始化 Java 类失败: {e}")
+                self.activity = None
+        def open_gallery(self):
+            # 调用java中的openSystemAlbum
+            self.activity.openSystemAlbum()
+        def fetch_and_copy_image(self):
+            # 调用java中的getPickedPath 
+            source_path = self.activity.getPickedPath()
+            renpy.notify(f"Picked image path: {source_path}")
+            # 这个notify是调试用的，可以删除
+            if not source_path:
+                return None
+            target_dir = os.path.join(config.gamedir, "images/Q_C_pick")
+            # 定义图片路径，这里必须和下面图片变量定义一样
+            if not os.path.exists(target_dir):
+                os.makedirs(target_dir)
+            original_filename = os.path.basename(source_path)
+            dest_filename = "picked_" + original_filename
+            # 在获取的图片名前加上picked_
+            target_path = os.path.join(target_dir, dest_filename)
+            try:
+                shutil.copy(source_path, target_path)
+                self.last_saved_filename = dest_filename
+                renpy.notify(f"Image copied to: {target_path}")
                 # 这个notify是调试用的，可以删除
-                if not source_path:
-                    return None
-                target_dir = os.path.join(config.gamedir, "images/Q_C_pick")
-                # 定义图片路径，这里必须和下面图片变量定义一样
-                if not os.path.exists(target_dir):
-                    os.makedirs(target_dir)
-                original_filename = os.path.basename(source_path)
-                dest_filename = "picked_" + original_filename
-                # 在获取的图片名前加上picked_
-                target_path = os.path.join(target_dir, dest_filename)
-                try:
-                    shutil.copy(source_path, target_path)
-                    self.last_saved_filename = dest_filename
-                    renpy.notify(f"Image copied to: {target_path}")
-                    # 这个notify是调试用的，可以删除
-                    return dest_filename
-                except Exception as e:
-                    renpy.notify("Copy Error: " + str(e))
-                    # 这个notify是调试用的，可以删除
-                    return None
-            def get_image_name(self):
-                return self.last_saved_filename
-        except Exception as e:
-            renpy.notify("非移动平台" + str(e))
+                return dest_filename
+            except Exception as e:
+                renpy.notify("Copy Error: " + str(e))
+                # 这个notify是调试用的，可以删除
+                return None
+        def get_image_name(self):
+            return self.last_saved_filename
 # 使用方法：
 # 首先先实例化Album
 # 然后调用open_gallery()打开相册
