@@ -33,6 +33,8 @@ label start:
             jump album_test
         "多文本测试":
             jump more
+        "界面转场":
+            jump 界面转场
         "退出":
             call screen quit_screen_qc
 label multi_language_test:
@@ -76,4 +78,43 @@ label more:
     "我醒了，我的意识正在恢复。"
     "我没有死在永夜的银河之中。"
     "我出于本能地睁开双眼。"
+    jump start
+label 界面转场:
+    scene baihua:
+        zoom 0.4
+    "界面转场测试show"
+    show screen_switch_2
+    pause 
+    "界面转场测试hide"
+    hide screen_switch_2
+    pause 
+    "界面转场测试show"
+    show screen_switch
+    pause 
+    "界面转场测试hide"
+    hide screen_switch
+    pause 
+    "界面转场测试show"
+    show screen_switch_2
+    pause 
+    "界面转场测试hide"
+    hide screen_switch_2
+    pause 
+    "界面转场测试show"
+    show screen_switch
+    pause 
+    "界面转场测试hide"
+    hide screen_switch
+    pause
+    "界面转场测试show"
+    show screen_switch_2
+    pause 
+    "界面转场测试hide"
+    hide screen_switch_2
+    pause 
+    "界面转场测试show"
+    show screen_switch
+    pause 
+    "界面转场测试hide"
+    hide screen_switch
     jump start

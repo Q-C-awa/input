@@ -109,14 +109,17 @@ screen main_menu():
         spacing gui.navigation_spacing
 
         textbutton _("开始游戏") action Start()
-        textbutton _("读取游戏") action ShowMenu("load")
-        textbutton _("设置") action ShowMenu("preferences")
-        textbutton _("关于") action ShowMenu("about")
-        textbutton _("列表—2") action ShowMenu("package_qc")
-        textbutton _("立绘鉴赏") action ShowMenu("Character_Art_Appreciation")
-        textbutton _("语音鉴赏") action ShowMenu("voice_gallery")
+        textbutton _("读取游戏") action ShowMenu("ex_screen","load")
+        textbutton _("设置") action ShowMenu("ex_screen","preferences")
+        textbutton _("关于") action ShowMenu("ex_screen","about")
+        textbutton _("列表—2") action ShowMenu("ex_screen","package_qc")
+        textbutton _("立绘鉴赏") action ShowMenu("ex_screen","Character_Art_Appreciation")
+        textbutton _("语音鉴赏") action ShowMenu("ex_screen","voice_gallery")
         textbutton _("退出") action Quit(confirm=not main_menu)
-
+        # # 此时这个组件可以逐字显示并且速度收到内置的slow_cps控制
+        # #                                  ^^^^^^^^^^^^^
+        # add Text("11dqwdia，djaijdioasd1",slow_cps=10)
+        # #                                 ^^^^^^^^^^^
     if gui.show_name:
 
         vbox:
